@@ -1,0 +1,403 @@
+@charset "UTF-8";
+$w:width;
+$h:height;
+$m:margin;
+* {
+    padding: 0;
+    #{$m}: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+}
+
+body {
+    font: 12px "UniqloProRegular", "syht_Regular" !important;
+}
+
+
+/* 头部 */
+
+.header>ul {
+    #{$w}: 1280px;
+    #{$h}: 42px;
+    #{$m}: 0 auto;
+    line-height: 40px;
+    text-align: right;
+}
+
+.header>ul>li {
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.header>ul>li>.search {
+    width: 250px;
+    height: 26px;
+    border: none!important;
+    border-bottom: 1px solid #ababab!important;
+}
+
+.header>ul>li>.search>i {
+    width: 15px;
+    height: 15px;
+}
+
+.header>ul>li>.search>input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 23px;
+    font-size: inherit;
+    outline: none;
+}
+
+
+/* 头部以下 */
+
+.elseheader {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+main {
+    width: 1280px;
+    height: 12812px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* 内容的头部 */
+
+header {
+    width: 100%;
+    height: 56px;
+    margin-bottom: 52px;
+    box-sizing: border-box;
+}
+
+header>.left-nav {
+    width: 823px;
+    height: 51px;
+    float: left;
+}
+
+header>.right-nav {
+    width: 457px;
+    height: 51px;
+    float: right;
+}
+
+
+/* 内容 */
+
+.content {
+    width: 100%;
+    height: 12511px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+/* 标题栏 */
+
+.title {
+    width: 100%;
+    height: 74px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+/* 轮播图 */
+
+.bannar {
+    width: 100%;
+    height: 637px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+/* 关键字标题 */
+
+.Keywordtitle {
+    width: 100%;
+    height: 105px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.Keywordtitle>ul {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.Keywordtitle>ul>li {
+    flex: 1;
+    padding-right: 16px;
+}
+
+
+/* 推荐商品部分 */
+
+.recommend {
+    width: 100%;
+    height: 1642px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+.recommend>.recommend-title {
+    padding-bottom: 28px;
+    width: 1250px;
+}
+
+.recommend>div:nth-child(3) {
+    padding: 28px 0 40px 0;
+}
+
+
+/* 渲染两个大部分 人气商品和潮流精选 */
+
+
+/* 人气商品部分 */
+
+.Popular {
+    width: 100%;
+    height: 1158px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+.Popular>.Popular-title {
+    padding-bottom: 28px;
+    width: 1250px;
+}
+
+.Popular>div:nth-child(3) {
+    padding-top: 28px;
+}
+
+
+/* 潮流精选 */
+
+.Current {
+    width: 100%;
+    height: 1158px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+.Current>.Current-title {
+    padding-bottom: 28px;
+    width: 1250px;
+}
+
+.Current>div:nth-child(3) {
+    padding-top: 28px;
+}
+
+
+/* 渲染结束 */
+
+
+/* 分页部分 */
+
+.paging {
+    width: 100%;
+    height: 1439px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+.paging>.paging-top {
+    height: 200px;
+    margin-bottom: 52px;
+}
+
+.paging>.paging-mid {
+    height: 150px;
+    margin-bottom: 52px;
+}
+
+
+/* 穿搭部分 */
+
+.wear {
+    width: 100%;
+    height: 640px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+.wear>.wear-title {
+    padding-bottom: 28px;
+    width: 1250px;
+}
+
+
+/* 合作部分 */
+
+.cooperation {
+    width: 100%;
+    height: 1097px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+.cooperation>.cooperation-title {
+    padding-bottom: 28px;
+    width: 1250px;
+}
+
+.cooperation>div:nth-child(3) {
+    padding-top: 28px;
+}
+
+
+/* ut部分 */
+
+.ut {
+    width: 100%;
+    height: 1158px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+.ut>.ut-title {
+    padding-bottom: 28px;
+    width: 1250px;
+}
+
+.ut>div:nth-child(3) {
+    padding-top: 28px;
+}
+
+
+/* 特辑部分 */
+
+.special {
+    width: 100%;
+    height: 1158px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+.special>.special-title {
+    padding-bottom: 28px;
+    width: 1250px;
+}
+
+.special>div:nth-child(3) {
+    padding-top: 28px;
+}
+
+
+/* tab头部 */
+
+.tab {
+    width: 100%;
+    height: 176px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+/* tab底部 */
+
+.tab1 {
+    width: 100%;
+    height: 446px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+/* 第二部分大渲染  便利购物服务 关于优衣库*/
+
+
+/* 便利购物服务 */
+
+.shoppingservice {
+    width: 100%;
+    height: 327px;
+    box-sizing: border-box;
+}
+
+.shoppingservice>.shoppingservice-title {
+    padding-bottom: 20px;
+}
+
+
+/* 关于优衣库 */
+
+.about {
+    width: 100%;
+    height: 327px;
+    box-sizing: border-box;
+}
+
+.about>.about-title {
+    padding-bottom: 20px;
+}
+
+
+/* 穿着指南 */
+
+.guide {
+    width: 100%;
+    height: 153px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+
+/* 广告 */
+
+.advertising {
+    width: 100%;
+    height: 163px;
+    box-sizing: border-box;
+}
+
+
+/* 广告1 */
+
+.advertising1 {
+    width: 100%;
+    height: 163px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+
+/* <!-- 内容的底部 --> */
+
+footer {
+    width: 100%;
+    height: 173px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+/* 固定滑块 */
+
+.topblock {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 100px;
+    bottom: 100px;
+    z-index: 999;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .24);
+    text-align: center;
+}
