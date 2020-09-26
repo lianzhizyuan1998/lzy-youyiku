@@ -7,7 +7,7 @@
   list-style: none !important; }
 
 body {
-  font: 12px "UniqloProRegular", "syht_Regular" !important; }
+  font-size: 12px; }
 
 /* 头部 */
 .header > ul {
@@ -63,39 +63,106 @@ header {
 header > .left-nav {
   width: 823px;
   height: 51px;
+  box-sizing: border-box;
   float: left; }
+
+header > .left-nav > li {
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 51px;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px; }
+
+header > .left-nav > li > span {
+  border-right: 1px #000 dotted;
+  padding-left: 8px;
+  padding-right: 8px; }
+
+header > .left-nav > li:nth-last-child(1) > span:nth-last-child(1) {
+  border: none;
+  padding-left: 8px;
+  padding-right: 8px; }
+
+header > .left-nav > li:nth-child(1) {
+  width: 50px; }
+
+header > .left-nav > li:nth-child(2) {
+  width: 116px; }
+
+header > .left-nav > li:nth-child(3) {
+  width: 97px; }
+
+header > .left-nav > li:nth-child(4) {
+  width: 96px; }
+
+header > .left-nav > li:nth-child(5) {
+  width: 140px; }
 
 header > .right-nav {
   width: 457px;
   height: 51px;
-  float: right; }
+  float: right;
+  background: #a1a1a1; }
 
 /* 内容 */
 .content {
   width: 100%;
-  height: 12511px;
+  height: 12516px;
   box-sizing: border-box;
   margin-bottom: 20px; }
 
 /* 标题栏 */
 .title {
   width: 100%;
-  height: 74px;
-  border: 1px solid black;
-  box-sizing: border-box; }
+  height: 50px;
+  box-sizing: border-box;
+  background-color: red;
+  margin-bottom: 24px; }
+
+.title > .left-arrow {
+  width: 55px;
+  height: 50px;
+  float: left;
+  cursor: pointer;
+  outline: none;
+  background: url(../img/notice_prev.png) no-repeat center center; }
+
+.title > .title-bannar {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  height: 100%; }
+
+.title > .right-arrow {
+  width: 55px;
+  height: 50px;
+  float: left;
+  cursor: pointer;
+  outline: none;
+  background: url(../img/right-arrow.png) no-repeat center center; }
 
 /* 轮播图 */
 .bannar {
   width: 100%;
   height: 637px;
-  border: 1px solid black;
   box-sizing: border-box; }
+
+.bannar > .button {
+  height: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  line-height: 0;
+  margin-top: 28px; }
 
 /* 关键字标题 */
 .Keywordtitle {
   width: 100%;
   height: 105px;
-  border: 1px solid black;
   box-sizing: border-box; }
 
 .Keywordtitle > ul {
@@ -108,6 +175,23 @@ header > .right-nav {
   flex: 1;
   padding-right: 16px; }
 
+.Keywordtitle > ul > li:nth-last-child(1) {
+  padding-right: 0; }
+
+.Keywordtitle > ul > li > a {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 46px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: default;
+  border: 1px solid #1b1b1b;
+  margin-top: 18px;
+  padding: 10px 0;
+  color: #1b1b1b;
+  text-decoration: none; }
+
 /* 推荐商品部分 */
 .recommend {
   width: 100%;
@@ -117,12 +201,12 @@ header > .right-nav {
 
 .recommend > .recommend-title {
   padding-bottom: 28px;
-  width: 1250px; }
+  width: 1250px;
+  margin-left: -20px; }
 
 .recommend > div:nth-child(3) {
   padding: 28px 0 40px 0; }
 
-/* 渲染两个大部分 人气商品和潮流精选 */
 /* 人气商品部分 */
 .Popular {
   width: 100%;
@@ -132,7 +216,8 @@ header > .right-nav {
 
 .Popular > .Popular-title {
   padding-bottom: 28px;
-  width: 1250px; }
+  width: 1250px;
+  margin-left: -20px; }
 
 .Popular > div:nth-child(3) {
   padding-top: 28px; }
@@ -146,12 +231,12 @@ header > .right-nav {
 
 .Current > .Current-title {
   padding-bottom: 28px;
-  width: 1250px; }
+  width: 1250px;
+  margin-left: -20px; }
 
 .Current > div:nth-child(3) {
   padding-top: 28px; }
 
-/* 渲染结束 */
 /* 分页部分 */
 .paging {
   width: 100%;
@@ -167,6 +252,44 @@ header > .right-nav {
   height: 150px;
   margin-bottom: 52px; }
 
+.paging > img {
+  padding-bottom: 28px;
+  width: 1250px;
+  margin-left: -20px; }
+
+.paging > .content-top {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #dadada; }
+
+.paging > .content-top > ul {
+  width: 100%;
+  display: flex;
+  text-align: center; }
+
+.paging > .content-top > ul > li {
+  flex: 1;
+  color: #ababab;
+  cursor: pointer; }
+
+.paging > .content-top > ul > li > a {
+  display: inline-block;
+  width: 100%;
+  padding: 0 30px 20px;
+  line-height: 26px;
+  text-align: center;
+  font-size: 20px;
+  color: inherit;
+  text-decoration: none; }
+
+.paging > .content-list > ul > li {
+  display: none;
+  float: left; }
+
+.paging > .content-list > ul > .active {
+  display: block; }
+
 /* 穿搭部分 */
 .wear {
   width: 100%;
@@ -176,7 +299,8 @@ header > .right-nav {
 
 .wear > .wear-title {
   padding-bottom: 28px;
-  width: 1250px; }
+  width: 1250px;
+  margin-left: -20px; }
 
 /* 合作部分 */
 .cooperation {
@@ -187,7 +311,8 @@ header > .right-nav {
 
 .cooperation > .cooperation-title {
   padding-bottom: 28px;
-  width: 1250px; }
+  width: 1250px;
+  margin-left: -20px; }
 
 .cooperation > div:nth-child(3) {
   padding-top: 28px; }
@@ -201,7 +326,8 @@ header > .right-nav {
 
 .ut > .ut-title {
   padding-bottom: 28px;
-  width: 1250px; }
+  width: 1250px;
+  margin-left: -20px; }
 
 .ut > div:nth-child(3) {
   padding-top: 28px; }
@@ -215,7 +341,8 @@ header > .right-nav {
 
 .special > .special-title {
   padding-bottom: 28px;
-  width: 1250px; }
+  width: 1250px;
+  margin-left: -20px; }
 
 .special > div:nth-child(3) {
   padding-top: 28px; }
@@ -224,17 +351,45 @@ header > .right-nav {
 .tab {
   width: 100%;
   height: 176px;
-  border: 1px solid black;
   box-sizing: border-box; }
+
+.tab > img {
+  padding-bottom: 28px;
+  width: 1250px;
+  margin-left: -20px; }
+
+.tab > .tab-top {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #dadada; }
+
+.tab > .tab-top > ul {
+  width: 100%;
+  display: flex;
+  text-align: center; }
+
+.tab > .tab-top > ul > li {
+  flex: 1;
+  color: #ababab;
+  cursor: pointer; }
+
+.tab > .tab-top > ul > li > a {
+  display: inline-block;
+  width: 100%;
+  padding: 0 30px 20px;
+  line-height: 26px;
+  text-align: center;
+  font-size: 20px;
+  color: inherit;
+  text-decoration: none; }
 
 /* tab底部 */
 .tab1 {
   width: 100%;
   height: 446px;
-  border: 1px solid black;
   box-sizing: border-box; }
 
-/* 第二部分大渲染  便利购物服务 关于优衣库*/
 /* 便利购物服务 */
 .shoppingservice {
   width: 100%;
@@ -242,7 +397,8 @@ header > .right-nav {
   box-sizing: border-box; }
 
 .shoppingservice > .shoppingservice-title {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-left: -20px; }
 
 /* 关于优衣库 */
 .about {
@@ -251,15 +407,51 @@ header > .right-nav {
   box-sizing: border-box; }
 
 .about > .about-title {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-left: -20px; }
 
 /* 穿着指南 */
 .guide {
   width: 100%;
   height: 153px;
-  border: 1px solid black;
   box-sizing: border-box;
   margin-bottom: 52px; }
+
+.guide > main {
+  margin-top: 20px;
+  margin-bottom: 28px;
+  width: 100%;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 105px;
+  border-bottom: #dadada 1px solid;
+  margin-top: 20px;
+  font-family: "微软雅黑";
+  color: #000;
+  cursor: pointer; }
+
+.guide > main > a:nth-child(1) {
+  font-size: 16px;
+  height: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #000; }
+
+.guide > main > a:nth-child(2) {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #000; }
+
+.guide > main > a > span {
+  display: inline-block;
+  text-decoration: underline;
+  color: #000; }
 
 /* 广告 */
 .advertising {
@@ -278,8 +470,71 @@ header > .right-nav {
 footer {
   width: 100%;
   height: 173px;
-  border: 1px solid black;
   box-sizing: border-box; }
+
+footer > .footer-nav {
+  height: 50px; }
+
+footer > .footer-nav > .footer-logo {
+  height: 50px;
+  float: left; }
+
+footer > .footer-nav > ul {
+  float: right;
+  width: 1230px;
+  background: #000;
+  padding: 15.2px 0; }
+
+footer > .footer-nav > ul > li {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+  border-right: 1px dotted #fff; }
+
+footer > .footer-nav > ul > li > a {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none; }
+
+footer > .footer-content {
+  width: 100%;
+  height: 103px;
+  margin-top: 20px;
+  position: relative;
+  background: white; }
+
+footer > .footer-content > .anti-fake {
+  position: absolute;
+  float: left;
+  bottom: 2px;
+  left: 4px; }
+
+footer > .footer-content > .anti-fake > a {
+  font: 12px "UniqloProRegular", "syht_Regular" !important;
+  color: #989A98;
+  letter-spacing: .75px;
+  text-decoration: none; }
+
+footer > .footer-content > .anti-fake > a > img {
+  padding: 0 5px; }
+
+footer > .footer-content > .anti-fake2 {
+  float: right; }
+
+footer > .footer-content > .anti-fake2 > a {
+  text-decoration: none; }
+
+footer > .footer-content > .anti-fake2 > a > img {
+  vertical-align: baseline; }
+
+footer > .footer-content > .anti-fake2 > img {
+  vertical-align: baseline;
+  width: 100px; }
 
 /* 固定滑块 */
 .topblock {
@@ -291,6 +546,7 @@ footer {
   z-index: 999;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.24);
-  text-align: center; }
+  text-align: center;
+  background-image: url(../img/TOP.png); }
 
 /*# sourceMappingURL=index.css.map */
