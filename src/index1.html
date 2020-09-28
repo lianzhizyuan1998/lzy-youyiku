@@ -7,7 +7,9 @@
     <meta property="wb:webmaster" content="186109a626c42fd1">
     <title>首页 - 优衣库网络旗舰店</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="script/require.js" data-main="script/main.js" defer async="true" id="currentpage" data-page="index_module"></script>
 </head>
+
 
 <body>
     <!-- 头部 -->
@@ -17,17 +19,17 @@
             <li class="dotted"></li>
             <li>登录</li>
             <li class="dotted"></li>
-            <li><i></i><span>账户</span></li>
+            <li><a><i></i><span>账户</span></a></li>
             <li class="dotted"></li>
-            <li><i></i><span>收藏夹</span></li>
+            <li><a><i></i><span>收藏夹</span></a></li>
             <li class="dotted"></li>
-            <li><i></i><span>购物车</span><i></i></li>
+            <li><a><i></i><span>购物车</span><i></i></a></li>
             <li class="dotted"></li>
-            <li><i></i><span>站内信</span></li>
+            <li><a><i></i><span>站内信</span></a></li>
             <li class="dotted"></li>
-            <li><i></i><span>联系客服</span></li>
+            <li><a><i></i><span>联系客服</span></a></li>
             <li class="dotted"></li>
-            <li><i></i><span>门店购买</span></li>
+            <li><a><i></i><span>门店购买</span></a></li>
             <li class="dotted"></li>
             <li>
                 <div class="search"><i></i></div>
@@ -47,10 +49,12 @@
                     <li><span>婴 幼 儿 装 BABY</span></li>
                 </ul>
                 <ul class="right-nav">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <a href="./blank-jump-page.html" target="_blank">网上购买指南</a>
+                    </li>
+                    <li><a href="./blank-jump-page.html" target="_blank">关注我们</a></li>
+                    <li><a href="./blank-jump-page.html" target="_blank">公告区</a></li>
+                    <li><a href="./blank-jump-page.html" target="_blank">店铺资料</a></li>
                 </ul>
             </header>
             <!-- 内容 -->
@@ -130,30 +134,33 @@
                         </ul>
                     </div>
                 </div>
+                <div class="xuanran">
+
+                </div>
                 <!-- 穿搭推荐 -->
-                <div class="wear">
+                <!-- <div class="wear">
                     <div class="wear-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/cdtj.jpg"></div>
                     <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/stylingbook_1280.jpg"></div>
 
-                </div>
+                </div> -->
                 <!-- 合作系列 -->
-                <div class="cooperation">
+                <!-- <div class="cooperation">
                     <div class="cooperation-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/hzxl.jpg"></div>
                     <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/0923/JWA%20(%E9%A2%84%E5%91%8A)_cooperation_A_1280.jpg"></div>
                     <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/0923/cooperation_B_1280.jpg"></div>
-                </div>
+                </div> -->
                 <!-- ut部分 -->
-                <div class="ut">
+                <!-- <div class="ut">
                     <div class="ut-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/utxl.jpg"></div>
                     <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0925/ut_A_1280.jpg"></div>
                     <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/ut_B_1280.jpg"></div>
-                </div>
+                </div> -->
                 <!-- 特辑部分 -->
-                <div class="special">
+                <!-- <div class="special">
                     <div class="special-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/tjyl.jpg"></div>
                     <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/features_A_1280.jpg"></div>
                     <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/features_B_1280.jpg"></div>
-                </div>
+                </div>  -->
                 <!-- 热销排行 -->
                 <!-- tab切换头 -->
                 <div class="tab">
@@ -166,19 +173,26 @@
                             <li><a>BABY</a></li>
                         </ul>
                     </div>
-
                 </div>
                 <!-- tab底下 -->
-                <div class="tab1"></div>
+                <div class="tab1">
+                    <ul>
+                    </ul>
+                </div>
                 <!-- 便利服务部分 -->
                 <div class="shoppingservice">
-                    <div class="shoppingservice-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/blgwfw.jpg"></div>
-                    <img src="https://www.uniqlo.cn/public/image/L1/2020/July/0717/Make-Shopping-more-Convenient.jpg">
+                    <div class="shoppingservice-title">
+                        <img src="https://www.uniqlo.cn/public/image/L1/2020/title/blgwfw.jpg">
+                    </div>
+                    <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/July/0717/Make-Shopping-more-Convenient.jpg"></a>
                 </div>
                 <!-- 关于优衣库 -->
                 <div class="about">
-                    <div class="about-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/gyyyk.jpg" alt=""></div>
-                    <div><img src="https://www.uniqlo.cn/public/image/L1/2020/August/0828/About-UNIQLO.jpg"></div>
+                    <div class="about-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/gyyyk.jpg"></div>
+
+                    <div>
+                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/August/0828/About-UNIQLO.jpg"></a>
+                    </div>
                 </div>
                 <!-- 穿着指南 -->
                 <div class="guide">
@@ -230,5 +244,7 @@
         <div class=" topblock "></div>
     </div>
 </body>
+
+
 
 </html>
