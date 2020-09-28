@@ -1,5 +1,6 @@
 <?php
-
+header('Access-Control-Allow-Origin:*');
+header('Access-Control-Allow-Method:POST,GET');
 $arr = array(
     array('sid'=>'1','url'=>'https://www.uniqlo.cn/hmall/test/u0000000018084/main/first/561/1.jpg','price'=>'299.00','title'=>'高腰修身牛仔九分裤(水洗产品) 429099','title1'=>'女装','type'=>'150/56A-175/90B',
     'span'=>'',

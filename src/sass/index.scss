@@ -23,13 +23,34 @@ body {
     #{$m}: 0 auto;
     line-height: 40px;
     text-align: right;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.header>ul>.logof>a {
+    display: none;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.header>ul>.logof>a>img {
+    width: 100%;
+    height: 100%;
 }
 
 .header>ul>li {
     display: inline-block;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 7px;
+    padding-left: 7px;
     vertical-align: middle;
+}
+
+.header>ul>li>a {
+    text-decoration: none;
+    color: #000;
 }
 
 .header>ul>li>.search {
@@ -37,23 +58,33 @@ body {
     height: 26px;
     border: none!important;
     border-bottom: 1px solid #ababab!important;
+    position: relative;
 }
 
 .header>ul>li>.search>i {
+    cursor: pointer;
+    background: url(../img/spirit.png)no-repeat -111px -2px;
     width: 15px;
     height: 15px;
+    z-index: 1;
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    margin-top: 5px;
 }
 
 .header>ul>li>.search>input {
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 23px;
+    padding-left: 15px;
     font-size: inherit;
     outline: none;
-}
-
-.header>ul>li {
-    vertical-align: middle;
+    position: absolute;
+    display: block;
+    border-style: none;
+    background-color: transparent;
+    text-indent: 6px;
+    float: left;
 }
 
 .header>ul>.dotted {
@@ -77,33 +108,114 @@ body {
     vertical-align: middle;
 }
 
-.header>ul>li:nth-child(5)>a>i {
+.header>ul>li:nth-child(6)>a>i {
     background: url(../img/spirit.png) no-repeat -131px -2px;
 }
 
-.header>ul>li:nth-child(7)>a>i {
+.header>ul>li:nth-child(8)>a>i {
     background: url(../img/spirit.png) no-repeat -7px -2px;
 }
 
-.header>ul>li:nth-child(9)>a>i {
+.header>ul>li:nth-child(10)>a>i {
     background: url(../img/spirit.png) no-repeat -45px -2px;
 }
 
-.header>ul>li:nth-child(9)>a>i:nth-child(1) {
+.header>ul>li:nth-child(10)>a>i:nth-child(1) {
     background: url(../img/spirit.png) no-repeat -29px -2px;
 }
 
-.header>ul>li:nth-child(11)>a>i {
+.header>ul>li:nth-child(12)>a>i {
     background: url(../img/spirit.png) no-repeat -65px -2px;
 }
 
-.header>ul>li:nth-child(13)>a>i {
+.header>ul>li:nth-child(14)>a>i {
     background: url(../img/spirit.png) no-repeat -87px -2px;
 }
 
-.header>ul>li:nth-child(15)>a>i {
+.header>ul>.share-all>i {
     background: url(../img/spirit1.png) no-repeat;
     background-size: 16px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.header>ul>.share-all {
+    position: relative;
+    display: inline-block;
+}
+
+.header>ul>.share-all:hover .share-overly {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header>ul>li>.share-overly {
+    display: block;
+    transition: all .3s;
+    opacity: 0;
+    z-index: 999;
+    width: 325px;
+    height: 235px;
+    visibility: hidden;
+    background-color: #fff;
+    position: absolute;
+    top: 36px;
+    left: 18px;
+    border: 1px solid #e6e6e6;
+    color: #000;
+    font-size: 12px;
+}
+
+.header>ul>li>.share-overly>span {
+    text-align: center;
+    margin-top: 10px;
+    display: inherit;
+    height: 40px;
+}
+
+.header>ul>li>.share-overly>.share-overly-left {
+    padding-left: 15px;
+    margin-top: 15px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+.header>ul>li>.share-overly>.share-overly-left>img {
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    vertical-align: baseline !important;
+    border: none;
+}
+
+.header>ul>li>.share-overly>.share-overly-left>span {
+    display: block;
+    line-height: 30px;
+}
+
+.header>ul>li>.share-overly>.share-overly-right {
+    padding-left: 15px;
+    margin-top: 15px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+.header>ul>li>.share-overly>.share-overly-right>img {
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    vertical-align: baseline !important;
+    border: none;
+}
+
+.header>ul>li>.share-overly>.share-overly-right>span {
+    display: block;
+    line-height: 30px;
 }
 
 
@@ -146,14 +258,22 @@ header>.left-nav>li {
     text-align: center;
     line-height: 51px;
     font-weight: bold;
-    color: #000;
     font-size: 14px;
 }
 
-header>.left-nav>li>span {
+header>.left-nav>li>a>span {
     border-right: 1px #000 dotted;
     padding-left: 8px;
     padding-right: 8px;
+    color: #000;
+}
+
+header>.left-nav>li>a {
+    text-decoration: none;
+}
+
+header>.left-nav>li>a>span:hover {
+    color: red;
 }
 
 header>.left-nav>li:nth-last-child(1)>span:nth-last-child(1) {
@@ -182,6 +302,10 @@ header>.left-nav>li:nth-child(5) {
     width: 140px;
 }
 
+header>.left-nav>li:nth-child(5)>a>span {
+    border: none;
+}
+
 header>.right-nav {
     width: 457px;
     height: 51px;
@@ -203,6 +327,10 @@ header>.right-nav>li>a {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+}
+
+header>.right-nav>li>a:hover {
+    color: red;
 }
 
 header>.right-nav>li:nth-child(1) {
@@ -255,7 +383,7 @@ header>.right-nav>li:nth-child(4) {
     margin-bottom: 24px;
 }
 
-.title>.left-arrow {
+.title>.left {
     width: 55px;
     height: 50px;
     float: left;
@@ -270,10 +398,24 @@ header>.right-nav>li:nth-child(4) {
     position: relative;
     overflow: hidden;
     float: left;
-    height: 100%;
+    height: 50px;
 }
 
-.title>.right-arrow {
+.title>.title-bannar>.img-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7020px;
+    height: 50px;
+}
+
+.title>.title-bannar>.img-list>li {
+    width: 1170px;
+    height: 50px;
+    float: left;
+}
+
+.title>.right {
     width: 55px;
     height: 50px;
     float: left;
@@ -332,7 +474,7 @@ header>.right-nav>li:nth-child(4) {
     margin-bottom: 46px;
     font-size: 16px;
     font-weight: bold;
-    cursor: default;
+    cursor: pointer;
     border: 1px solid #1b1b1b;
     margin-top: 18px;
     padding: 10px 0;
@@ -401,7 +543,7 @@ header>.right-nav>li:nth-child(4) {
 }
 
 
-/* 分页部分 */
+/* tab分页部分 */
 
 .paging {
     width: 100%;
@@ -445,6 +587,10 @@ header>.right-nav>li:nth-child(4) {
     cursor: pointer;
 }
 
+.paging>.content-top>ul>li:hover {
+    color: #1b1b1b;
+}
+
 .paging>.content-top>ul>li>a {
     display: inline-block;
     width: 100%;
@@ -463,68 +609,18 @@ header>.right-nav>li:nth-child(4) {
 
 .paging>.content-list>ul>.active {
     display: block;
+    float: left;
 }
 
-// /* 穿搭部分 */
-// .wear {
-//     width: 100%;
-//     height: 640px;
-//     box-sizing: border-box;
-//     margin-bottom: 52px;
-// }
-// .wear>.wear-title {
-//     padding-bottom: 28px;
-//     width: 1250px;
-//     margin-left: -20px;
-// }
-// /* 合作部分 */
-// .cooperation {
-//     width: 100%;
-//     height: 1097px;
-//     box-sizing: border-box;
-//     margin-bottom: 52px;
-// }
-// .cooperation>.cooperation-title {
-//     padding-bottom: 28px;
-//     width: 1250px;
-//     margin-left: -20px;
-// }
-// .cooperation>div:nth-child(3) {
-//     padding-top: 28px;
-// }
-// /* ut部分 */
-// .ut {
-//     width: 100%;
-//     height: 1158px;
-//     box-sizing: border-box;
-//     margin-bottom: 52px;
-// }
-// .ut>.ut-title {
-//     padding-bottom: 28px;
-//     width: 1250px;
-//     margin-left: -20px;
-// }
-// .ut>div:nth-child(3) {
-//     padding-top: 28px;
-// }
-// /* 特辑部分 */
-// .special {
-//     width: 100%;
-//     height: 1158px;
-//     box-sizing: border-box;
-//     margin-bottom: 52px;
-// }
-// .special>.special-title {
-//     padding-bottom: 28px;
-//     width: 1250px;
-//     margin-left: -20px;
-// }
-// .special>div:nth-child(3) {
-//     padding-top: 28px;
-// }
+.paging>.content-top>ul>.active-tab {
+    border-bottom: 3px #1b1b1b solid;
+    color: #1b1b1b;
+}
+
+//渲染部分
 .xuanran {
     width: 1250px;
-    height: 4053px;
+    height: 4310px;
 }
 
 .xuanran1 {
@@ -544,6 +640,13 @@ header>.right-nav>li:nth-child(4) {
     padding-top: 28px;
 }
 
+.xuanran>.xuanran1:nth-child(1) {
+    height: 630px;
+    width: 1158px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
 
 /* tab头部 */
 
@@ -559,26 +662,26 @@ header>.right-nav>li:nth-child(4) {
     margin-left: -20px;
 }
 
-.tab>.tab-top {
+.tab>.tabtop {
     width: 100%;
     height: 50px;
     margin-bottom: 28px;
     border-bottom: 1px solid #dadada;
 }
 
-.tab>.tab-top>ul {
+.tab>.tabtop>ul {
     width: 100%;
     display: flex;
     text-align: center;
 }
 
-.tab>.tab-top>ul>li {
+.tab>.tabtop>ul>li {
     flex: 1;
     color: #ababab;
     cursor: pointer;
 }
 
-.tab>.tab-top>ul>li>a {
+.tab>.tabtop>ul>li>a {
     display: inline-block;
     width: 100%;
     padding: 0 30px 20px;
@@ -590,8 +693,13 @@ header>.right-nav>li:nth-child(4) {
 }
 
 //移入变色
-.tab>.tab-top>ul>li:hover {
+.tab>.tabtop>ul>li:hover {
     color: #1b1b1b;
+}
+
+.tab>.tabtop>ul>.active-first {
+    border-bottom: 3px solid;
+    color: black;
 }
 
 
@@ -606,6 +714,7 @@ header>.right-nav>li:nth-child(4) {
 .tab1>ul {
     width: 100%;
     height: 446px;
+    display: none;
 }
 
 .tab1>ul>li {
@@ -685,6 +794,10 @@ header>.right-nav>li:nth-child(4) {
     background-size: 100% auto;
     vertical-align: middle;
     display: inline-block;
+}
+
+.tab1>.active-sceond {
+    display: block;
 }
 
 
@@ -882,6 +995,7 @@ footer>.footer-content>.anti-fake2>img {
 /* 固定滑块 */
 
 .topblock {
+    display: none;
     position: fixed;
     width: 50px;
     height: 50px;
