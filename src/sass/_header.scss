@@ -1,0 +1,210 @@
+@charset "UTF-8";
+$w:width;
+$h:height;
+$m:margin;
+// 头部
+.header {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.header>ul {
+    #{$w}: 1280px;
+    #{$h}: 42px;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: right;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.header>ul>.logof>a {
+    display: none;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.header>ul>.logof>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+.header>ul>li {
+    display: inline-block;
+    padding-right: 7px;
+    padding-left: 7px;
+    vertical-align: middle;
+}
+
+.header>ul>li>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header>ul>li>.search {
+    width: 250px;
+    height: 26px;
+    border: none!important;
+    border-bottom: 1px solid #ababab!important;
+    position: relative;
+}
+
+.header>ul>li>.search>i {
+    cursor: pointer;
+    background: url(../img/spirit.png)no-repeat -111px -2px;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    margin-top: 5px;
+}
+
+.header>ul>li>.search>input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-size: inherit;
+    outline: none;
+    position: absolute;
+    display: block;
+    border-style: none;
+    background-color: transparent;
+    text-indent: 6px;
+    float: left;
+}
+
+.header>ul>.dotted {
+    width: 2px !important;
+    height: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 0;
+    background: url(../img/spirit.png) no-repeat 0 0;
+}
+
+.header>ul>li>a>i {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.header>ul>li>a>span {
+    vertical-align: middle;
+}
+
+.header>ul>li:nth-child(6)>a>i {
+    background: url(../img/spirit.png) no-repeat -131px -2px;
+}
+
+.header>ul>li:nth-child(8)>a>i {
+    background: url(../img/spirit.png) no-repeat -7px -2px;
+}
+
+.header>ul>li:nth-child(10)>a>i {
+    background: url(../img/spirit.png) no-repeat -45px -2px;
+}
+
+.header>ul>li:nth-child(10)>a>i:nth-child(1) {
+    background: url(../img/spirit.png) no-repeat -29px -2px;
+}
+
+.header>ul>li:nth-child(12)>a>i {
+    background: url(../img/spirit.png) no-repeat -65px -2px;
+}
+
+.header>ul>li:nth-child(14)>a>i {
+    background: url(../img/spirit.png) no-repeat -87px -2px;
+}
+
+.header>ul>.share-all>i {
+    background: url(../img/spirit1.png) no-repeat;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.header>ul>.share-all {
+    position: relative;
+    display: inline-block;
+}
+
+.header>ul>.share-all:hover .share-overly {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header>ul>li>.share-overly {
+    display: block;
+    transition: all .3s;
+    opacity: 0;
+    z-index: 999;
+    width: 325px;
+    height: 235px;
+    visibility: hidden;
+    background-color: #fff;
+    position: absolute;
+    top: 36px;
+    left: 18px;
+    border: 1px solid #e6e6e6;
+    color: #000;
+    font-size: 12px;
+}
+
+.header>ul>li>.share-overly>span {
+    text-align: center;
+    margin-top: 10px;
+    display: inherit;
+    height: 40px;
+}
+
+.header>ul>li>.share-overly>.share-overly-left {
+    padding-left: 15px;
+    margin-top: 15px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+.header>ul>li>.share-overly>.share-overly-left>img {
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    vertical-align: baseline !important;
+    border: none;
+}
+
+.header>ul>li>.share-overly>.share-overly-left>span {
+    display: block;
+    line-height: 30px;
+}
+
+.header>ul>li>.share-overly>.share-overly-right {
+    padding-left: 15px;
+    margin-top: 15px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+.header>ul>li>.share-overly>.share-overly-right>img {
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    vertical-align: baseline !important;
+    border: none;
+}
+
+.header>ul>li>.share-overly>.share-overly-right>span {
+    display: block;
+    line-height: 30px;
+}

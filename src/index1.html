@@ -7,6 +7,7 @@
     <meta property="wb:webmaster" content="186109a626c42fd1">
     <title>首页 - 优衣库网络旗舰店</title>
     <link rel="stylesheet" href="css/index.css">
+    <!-- 模块化 -->
     <script src="script/require.js" data-main="script/main.js" defer async="true" id="currentpage" data-page="index_module"></script>
 </head>
 
@@ -15,6 +16,7 @@
     <!-- 头部 -->
     <div class="header">
         <ul>
+            <!-- 头部logo 隐藏 下滑会悬浮顶部显示 -->
             <div class="logof">
                 <a href="./blank-jump-page.html" target="_blank"><img src="./img/logo1.png"></a>
             </div>
@@ -32,13 +34,17 @@
             <li class="dotted"></li>
             <li><a href="./blank-jump-page.html" target="_blank"><i></i><span>联系客服</span></a></li>
             <li class="dotted"></li>
+
+            <!-- 移入显示二维码  -->
             <li class="share-all"><i></i><span>门店购买</span>
                 <div class="share-overly">
                     <span>门店急送等服务仅支持手机端购买，欢迎扫码体验！</span>
+                    <!-- 左边APP二维码 -->
                     <div class="share-overly-left">
                         <img src="./img/app-download.png">
                         <span>优衣库APP下载</span>
                     </div>
+                    <!-- 右边小程序二维码 -->
                     <div class="share-overly-right">
                         <img src="./img/wx-download.png">
                         <span>优衣库小程序登录</span>
@@ -46,17 +52,21 @@
                 </div>
             </li>
             <li class="dotted"></li>
+
+            <!-- 搜索框 -->
             <li>
                 <div class="search"><input type="text" placeholder="站内搜索" value autocomplete="off"><i></i></div>
             </li>
-
         </ul>
     </div>
+
     <!-- 头部以下 -->
     <div class="elseheader">
         <main>
-            <!-- 内容的头部 -->
+
+            <!-- 二级菜单 -->
             <header>
+                <!-- 二级菜单左边 -->
                 <ul class="left-nav">
                     <li>
                         <a href="./blank-jump-page.html" target="_blank"><img src="./img/LOGO.png"></a>
@@ -66,6 +76,7 @@
                     <li><a href="./blank-jump-page.html" target="_blank"><span>童 装 KIDS</span></a></li>
                     <li><a href="./blank-jump-page.html" target="_blank"><span>婴 幼 儿 装 BABY</span></a></li>
                 </ul>
+                <!-- 二级菜单右边 -->
                 <ul class="right-nav">
                     <li>
                         <a href="./blank-jump-page.html" target="_blank">网上购买指南</a>
@@ -75,11 +86,16 @@
                     <li><a href="./blank-jump-page.html" target="_blank">店铺资料</a></li>
                 </ul>
             </header>
+
             <!-- 内容 -->
             <div class="content">
-                <!-- 标题栏 -->
+
+                <!-- 两个轮播图 -->
+                <!-- 第一个无圆点轮播图 -->
                 <div class="title">
+                    <!-- 轮播图左箭头 -->
                     <div class="left"></div>
+                    <!-- 轮播图内容 -->
                     <div class="title-bannar">
                         <ul class="img-list">
                             <li>
@@ -105,15 +121,51 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- 轮播图右箭头 -->
                     <div class="right"></div>
                 </div>
-                <!-- 轮播图 -->
-                <div class="bannar"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/T4-UPJ.jpg">
-                    <div class="button">
-
+                <!-- 第二个大轮播图带圆点 -->
+                <div class="bannar">
+                    <div class="bannar1">
+                        <ul class='img-list1'>
+                            <li>
+                                <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/T1.jpg"></a>
+                            </li>
+                            <li>
+                                <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/T2.jpg"></a>
+                            </li>
+                            <li>
+                                <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/T3.jpg"></a>
+                            </li>
+                            <li>
+                                <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/T4.jpg"></a>
+                            </li>
+                            <li>
+                                <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0911/0912/PC-L1.jpg"></a>
+                            </li>
+                            <li>
+                                <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/T1.jpg"></a>
+                            </li>
+                        </ul>
                     </div>
+                    <!-- 底下圆点 -->
+                    <div class="dot">
+                        <ul class="dot-list">
+                            <li class="item active"></li>
+                            <li class="item"></li>
+                            <li class="item"></li>
+                            <li class="item"></li>
+                            <li class="item"></li>
+                        </ul>
+                    </div>
+                    <!-- 左箭头 -->
+                    <div class="left1"><img src="./img/left.png"></div>
+                    <!-- 右箭头 -->
+                    <div class="right1"><img src="./img/right.png"></div>
+
                 </div>
-                <!-- /* 关键字标题 */ -->
+
+                <!-- 关键字标题  -->
                 <div class="Keywordtitle">
                     <ul>
                         <li>
@@ -136,48 +188,57 @@
                         </li>
                     </ul>
                 </div>
+
                 <!-- 推荐商品部分 -->
                 <div class="recommend">
-                    <div class="recommend-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/bztj.jpg"></div>
+                    <div class="recommend-title"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/title/bztj.jpg"></div>
                     <div>
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/recommend_A_1280.jpg"></a>
+                        <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/September/0928/recommend_A_1280.jpg"></a>
                     </div>
                     <div>
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/Styling.jpg"></a>
+                        <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/September/0928/Styling.jpg"></a>
                     </div>
                     <div>
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/recommend_B_1280.jpg"></a>
+                        <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/September/0928/recommend_B_1280.jpg"></a>
                     </div>
                 </div>
+
                 <!-- 人气商品部分 -->
                 <div class="Popular">
-                    <div class="Popular-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/rqsp.jpg"></div>
+                    <div class="Popular-title"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/title/rqsp.jpg"></div>
                     <div>
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/new_A_1280.jpg"></a>
+                        <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/September/0928/new_A_1280.jpg"></a>
                     </div>
                     <div>
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/new_B_1280.jpg"></a>
+                        <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/September/0928/new_B_1280.jpg"></a>
                     </div>
                 </div>
+
                 <!-- 潮流精选部分 -->
                 <div class="Current">
-                    <div class="Current-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/cljx.jpg"></div>
+                    <div class="Current-title"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/title/cljx.jpg"></div>
                     <div>
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/timelimit_A_1280.jpg"></a>
+                        <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/September/0928/timelimit_A_1280.jpg"></a>
                     </div>
                     <div>
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0928/timelimit_B_1280.jpg"></a>
+                        <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/September/0928/timelimit_B_1280.jpg"></a>
                     </div>
                 </div>
-                <!-- tab分页部分 -->
+
+                <!-- tab切换热门商品分类 -->
                 <div class="paging">
+                    <!-- 漫威广告 -->
                     <div class="paging-top">
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/marvel%E4%B9%B0%E8%B5%A0_PC_CN.jpg"></a>
+                        <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/September/0918/marvel%E4%B9%B0%E8%B5%A0_PC_CN.jpg"></a>
                     </div>
+                    <!-- 超值优惠广告 -->
                     <div class="paging-mid">
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/August/0904/超U惠专区.jpg"></a>
+                        <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/August/0904/超U惠专区.jpg"></a>
                     </div>
-                    <img src="https://www.uniqlo.cn/public/image/L1/2020/title/rmspfl.jpg">
+                    <!-- 热门商品分类的标题 -->
+                    <img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/title/rmspfl.jpg">
+
+                    <!-- tab切换头部 -->
                     <div class="content-top">
                         <ul>
                             <li class="active-tab"><a>WOMEN</a></li>
@@ -186,9 +247,10 @@
                             <li><a>BABY</a></li>
                         </ul>
                     </div>
+                    <!-- tab切换的内容 -->
                     <div class="content-list">
                         <ul>
-                            <li class="active">
+                            <li class="active1">
                                 <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/catalog_W_1280.jpg"></a>
                             </li>
                             <li>
@@ -203,36 +265,15 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- 渲染部分 穿搭推荐-合作系列-ut部分-特辑部分 -->
                 <div class="xuanran">
                 </div>
-                <!-- 穿搭推荐 -->
-                <!-- <div class="wear">
-                    <div class="wear-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/cdtj.jpg"></div>
-                    <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/stylingbook_1280.jpg"></div>
 
-                </div> -->
-                <!-- 合作系列 -->
-                <!-- <div class="cooperation">
-                    <div class="cooperation-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/hzxl.jpg"></div>
-                    <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/0923/JWA%20(%E9%A2%84%E5%91%8A)_cooperation_A_1280.jpg"></div>
-                    <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/0923/cooperation_B_1280.jpg"></div>
-                </div> -->
-                <!-- ut部分 -->
-                <!-- <div class="ut">
-                    <div class="ut-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/utxl.jpg"></div>
-                    <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0925/ut_A_1280.jpg"></div>
-                    <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/ut_B_1280.jpg"></div>
-                </div> -->
-                <!-- 特辑部分 -->
-                <!-- <div class="special">
-                    <div class="special-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/tjyl.jpg"></div>
-                    <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/features_A_1280.jpg"></div>
-                    <div><img src="https://www.uniqlo.cn/public/image/L1/2020/September/0918/features_B_1280.jpg"></div>
-                </div>  -->
                 <!-- 热销排行 -->
                 <!-- tab切换头 -->
                 <div class="tab">
-                    <img src="https://www.uniqlo.cn/public/image/L1/2020/title/rxph.jpg">
+                    <img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/title/rxph.jpg">
                     <div class="tabtop">
                         <ul>
                             <li class="active-first"><a>WOMEN</a></li>
@@ -242,28 +283,31 @@
                         </ul>
                     </div>
                 </div>
-                <!-- tab底下 -->
+                <!-- tab切换内容 -->
                 <div class="tab1">
                     <ul class="active-sceond"></ul>
                     <ul class="active-third"></ul>
                     <ul class="active-third"></ul>
                     <ul class="active-third"></ul>
                 </div>
+
                 <!-- 便利服务部分 -->
                 <div class="shoppingservice">
                     <div class="shoppingservice-title">
-                        <img src="https://www.uniqlo.cn/public/image/L1/2020/title/blgwfw.jpg">
+                        <img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/title/blgwfw.jpg">
                     </div>
-                    <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/July/0717/Make-Shopping-more-Convenient.jpg"></a>
+                    <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/July/0717/Make-Shopping-more-Convenient.jpg"></a>
                 </div>
+
                 <!-- 关于优衣库 -->
                 <div class="about">
-                    <div class="about-title"><img src="https://www.uniqlo.cn/public/image/L1/2020/title/gyyyk.jpg"></div>
+                    <div class="about-title"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/title/gyyyk.jpg"></div>
 
                     <div>
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/August/0828/About-UNIQLO.jpg"></a>
+                        <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://www.uniqlo.cn/public/image/L1/2020/August/0828/About-UNIQLO.jpg"></a>
                     </div>
                 </div>
+
                 <!-- 穿着指南 -->
                 <div class="guide">
                     <main>
@@ -271,48 +315,55 @@
                         <a href="./blank-jump-page.html" target="_blank">根据商品与身高演示不同的衣长效果。<span>购买时敬请参考</span></a>
                     </main>
                 </div>
+
                 <!-- 广告 -->
-                <div class="advertising"><img src="./img/推广Banner.png"></div>
+                <div class="advertising"><img class='lazy' data-original="./img/推广Banner.png"></div>
+
                 <!-- 广告1 -->
                 <div class="advertising1">
-                    <a href="./blank-jump-page.html" target="_blank"><img src="https://img.alicdn.com/imgextra/i3/2575956766/O1CN01tw2Ecf1zqsP7dH687_!!2575956766.jpg"></a>
+                    <a href="./blank-jump-page.html" target="_blank"><img class='lazy' data-original="https://img.alicdn.com/imgextra/i2/2575956766/O1CN015j3Oe31zqsPER1dh0_!!2575956766.jpg"></a>
+
                 </div>
+
             </div>
-            <!-- 内容的底部 -->
-            <footer>
-                <!-- 头部导航 -->
-                <div class="footer-nav">
-                    <!-- 左边的Logo -->
-                    <div class="footer-logo">
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/Image/L1/footer/footer_logo.gif"></a>
-                    </div>
-                    <!-- 右边的列表 -->
-                    <ul>
-                        <li><a href="./blank-jump-page.html" target="_blank">店铺资料</a></li>
-                        <li><a href="./blank-jump-page.html" target="_blank">招聘信息</a></li>
-                        <li><a href="./blank-jump-page.html " target="_blank">访问权限</a>
-                        </li>
-                        <li> <a href="./blank-jump-page.html" target="_blank">隐私权保护</a></li>
-                    </ul>
-                </div>
-                <!-- 下面的工商图标 -->
-                <div class="footer-content">
-                    <!-- 左边的防伪字 -->
-                    <div class="anti-fake">
-                        <a href="./blank-jump-page.html" target="_blank">迅销（中国）商贸有限公司 沪ICP备09003223号</a>
-                        <a href="./blank-jump-page.html"><img src="./img/national.png">沪公网安备 31010402000957号</a>
-                    </div>
-                    <!-- 右边的防伪图片 -->
-                    <div class="anti-fake2">
-                        <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/special/lz2.jpg"></a>
-                        <img src="./img/订购.png">
-                    </div>
-                </div>
-            </footer>
         </main>
-        <!-- 固定滑块 -->
-        <div class=" topblock "></div>
     </div>
+
+    <!-- 底部 -->
+    <footer>
+        <!-- 底部导航 -->
+        <div class="footer-nav">
+            <!-- 左边的Logo -->
+            <div class="footer-logo">
+                <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/Image/L1/footer/footer_logo.gif"></a>
+            </div>
+            <!-- 右边的列表 -->
+            <ul>
+                <li><a href="./blank-jump-page.html" target="_blank">店铺资料</a></li>
+                <li><a href="./blank-jump-page.html" target="_blank">招聘信息</a></li>
+                <li><a href="./blank-jump-page.html " target="_blank">访问权限</a>
+                </li>
+                <li> <a href="./blank-jump-page.html" target="_blank">隐私权保护</a></li>
+            </ul>
+        </div>
+        <!-- 下面的工商图标 -->
+        <div class="footer-content">
+            <!-- 左边的防伪字 -->
+            <div class="anti-fake">
+                <a href="./blank-jump-page.html" target="_blank">迅销（中国）商贸有限公司 沪ICP备09003223号</a>
+                <a href="./blank-jump-page.html"><img src="./img/national.png">沪公网安备 31010402000957号</a>
+            </div>
+            <!-- 右边的防伪图片 -->
+            <div class="anti-fake2">
+                <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/special/lz2.jpg"></a>
+                <img src="./img/订购.png">
+            </div>
+        </div>
+    </footer>
+
+    <!-- 固定滑块 -->
+    <div class=" topblock "></div>
+
 </body>
 
 
