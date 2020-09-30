@@ -887,16 +887,45 @@ header > .right-nav > li:nth-child(4) {
   height: 23px;
 }
 
-.tab1 > ul > li > a > img {
-  width: 212px;
-  height: 222px;
-  margin-bottom: 10px;
+.tab1 > ul > li > a > section {
+  display: block;
 }
 
-.tab1 > ul > li > a > .tab-color {
+.tab1 > ul > li > a > section > img {
+  width: 212px;
+  height: 222px;
+}
+
+.tab1 > ul > li > .tab-color {
+  width: 100%;
+  position: relative;
+  cursor: default;
+}
+
+.tab1 > ul > li > .tab-color > ul {
   width: 212px;
   height: 30px;
-  background-color: #000;
+  margin-left: 0;
+  margin-right: 0;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  cursor: default;
+}
+
+.tab1 > ul > li > .tab-color > ul > li {
+  width: 26px;
+  height: 26px;
+  padding: 1px;
+  margin: 2.5px 5px 5px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.tab1 > ul > li > .tab-color > ul > .smallpicaq {
+  border: 1px solid black;
 }
 
 .tab1 > ul > li > a > p {
