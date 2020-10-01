@@ -89,5 +89,3 @@ $arr = array(
 );
 
 echo json_encode($arr); //将数据转换成json格式输出。
-
-//http://localhost/lzy/9.8%20_php+mysql/4.api.php   接口地址

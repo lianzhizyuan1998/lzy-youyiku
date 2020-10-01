@@ -314,6 +314,19 @@ footer > .footer-content > .anti-fake2 > img {
 
 body {
   font-size: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+body > .zhezhao {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1999;
 }
 
 /* 头部以下 */
@@ -334,9 +347,10 @@ main {
 /* 内容的头部 */
 header {
   width: 100%;
-  height: 56px;
+  height: 51px;
   margin-bottom: 52px;
   box-sizing: border-box;
+  position: relative;
 }
 
 header > .left-nav {
@@ -423,6 +437,21 @@ header > .right-nav > li > a {
   font-weight: bold;
 }
 
+header > .right-nav > .aboutus {
+  text-decoration: none;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+header > .right-nav > li:hover {
+  color: red;
+}
+
 header > .right-nav > li > a:hover {
   color: red;
 }
@@ -441,19 +470,106 @@ header > .right-nav > li:nth-child(2) {
   background: url(../img/new.png) no-repeat 73px 8px;
 }
 
-header > .right-nav > li:nth-child(2) > a:nth-child(1) {
-  padding: 0 20px;
-  border-right: 1px #fff dotted;
-}
-
 header > .right-nav > li:nth-child(3) {
   width: 130px;
   background: url(../img/new.png) no-repeat 83px 8px;
 }
 
+header > .right-nav > li:nth-child(3) > a:nth-child(1) {
+  padding: 0 30px;
+  border-left: 1px #fff dotted;
+}
+
 header > .right-nav > li:nth-child(4) {
   width: 99px;
   background: #666666;
+}
+
+header > .header-detail {
+  display: block;
+}
+
+header > #guanzhu {
+  position: absolute;
+  top: 70px;
+  width: 1280px;
+  height: 268px;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  background: #fff;
+  z-index: 2000;
+  display: none;
+}
+
+header > #guanzhu > .sanjiao {
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  z-index: -1;
+  transform: rotate(45deg);
+  right: 266px;
+}
+
+header > #guanzhu > .close-btn {
+  font-size: 26px;
+  color: #fe0000;
+  text-decoration: none;
+  position: absolute;
+  top: -28px;
+  right: 0;
+  cursor: pointer;
+}
+
+header > #guanzhu > ul > .header-detail-list {
+  float: left;
+  width: 25%;
+}
+
+header > #guanzhu > ul > .header-detail-list > ul > .header-detail-title {
+  height: 38px;
+  line-height: 18px;
+  width: 315px;
+  text-align: center;
+}
+
+header > #guanzhu > ul > .header-detail-list > ul > .header-detail-title:hover {
+  background-color: #f00;
+}
+
+header > #guanzhu > ul > .header-detail-list > ul > .header-detail-title:hover a {
+  color: white;
+}
+
+header > #guanzhu > ul > .header-detail-list > ul > .header-detail-title > a {
+  text-decoration: none;
+  color: #f00;
+}
+
+header > #guanzhu > ul > .header-detail-list > ul > .header-detail-img1 {
+  width: 315px;
+  height: 190px;
+  background: url(https://www.uniqlo.cn/public/image/L1/2018/10.11/APP.jpg) no-repeat center center;
+}
+
+header > #guanzhu > ul > .header-detail-list > ul > .header-detail-img2 {
+  width: 315px;
+  height: 190px;
+  background: url(https://www.uniqlo.cn/public/image/L1/2018/10.11/wecat.jpg) no-repeat center center;
+}
+
+header > #guanzhu > ul > .header-detail-list > ul > .header-detail-img3 {
+  width: 315px;
+  height: 190px;
+  background: url(https://www.uniqlo.cn/public/Image/L1/nav/nav-Qcode/2017/06/16/QR_CHINA.jpg) no-repeat center center;
+}
+
+header > #guanzhu > ul > .header-detail-list > ul > .header-detail-img4 {
+  width: 315px;
+  height: 190px;
+  background: url(https://www.uniqlo.cn/public/Image/L1/nav/nav-Qcode/2017/06/16/QR_service.jpg) no-repeat center center;
 }
 
 /* 内容 */
