@@ -78,6 +78,61 @@ $m:margin;
     float: left;
 }
 
+.header>ul>li>.search-bottom {
+    width: 250px;
+    height: 217px;
+    position: absolute;
+    left: 1024px;
+    top: 34.0469px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .22);
+    z-index: 9999;
+    display: none;
+}
+
+.header>ul>li>.search-bottom>.search-bottom1 {
+    zoom: 1;
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-bottom: 10px
+}
+
+.header>ul>li>.search-bottom>.search-bottom1>.search-bottom-title {
+    color: #1b1b1b;
+    line-height: 18px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.header>ul>li>.search-bottom>.search-bottom1>ul {
+    width: 230px;
+}
+
+.header>ul>li>.search-bottom>.search-bottom1>ul>li {
+    border: 1px solid #ababab;
+    margin-top: 10px;
+    margin-right: 10px;
+    line-height: 24px;
+    padding: 0 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.header>ul>li>.search-bottom>.search-bottom1>ul>li>a {
+    color: black
+}
+
+.header>ul>li>.search-bottom>.search-bottom1>ul>li>a:hover {
+    color: #378694;
+}
+
+.header>ul>li>.search-bottom>.search-bottom1>ul>li:hover {
+    border-color: #378694;
+}
+
 .header>ul>.dotted {
     width: 2px !important;
     height: 18px;
@@ -207,4 +262,521 @@ $m:margin;
 .header>ul>li>.share-overly>.share-overly-right>span {
     display: block;
     line-height: 30px;
+}
+
+
+/* 内容的头部 */
+
+header {
+    width: 1280px;
+    height: 51px;
+    margin-bottom: 52px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: white;
+    margin: 0 auto;
+}
+
+header>.left-nav {
+    width: 823px;
+    height: 51px;
+    box-sizing: border-box;
+    float: left;
+}
+
+header>.left-nav>li {
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 51px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header>.left-nav>li>span {
+    border-right: 1px #000 dotted;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #000;
+}
+
+header>.left-nav>li {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header>.left-nav>li>span:hover {
+    color: red;
+}
+
+header>.left-nav>li:nth-last-child(1)>span:nth-last-child(1) {
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+header>.left-nav>li:nth-child(1) {
+    width: 50px;
+}
+
+header>.left-nav>li:nth-child(2) {
+    width: 116px;
+}
+
+header>.left-nav>li:nth-child(3) {
+    width: 97px;
+}
+
+header>.left-nav>li:nth-child(4) {
+    width: 96px;
+}
+
+header>.left-nav>li:nth-child(5) {
+    width: 140px;
+}
+
+header>.left-nav>li:nth-child(5)>span {
+    border: none;
+}
+
+header>#women {
+    position: absolute;
+    top: 70px;
+    width: 1280px;
+    height: 570px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background: #fff;
+    z-index: 2000;
+    display: none;
+}
+
+header>#women>dl {
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+
+header>#women>dl>.nav-list-part {
+    height: 33%;
+    padding: 5px 0 10px;
+}
+
+header>#women>dl>.nav-list-part>dt {
+    width: 280px;
+    padding: 5px 0;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+header>#women>dl>.nav-list-part>dd {
+    margin: 12px 0 0 0;
+    font-size: 12px;
+    cursor: pointer;
+    border-right: 1px dashed #ccc;
+    width: 49%;
+    display: inline-block;
+    line-height: 1;
+}
+
+header>#women>dl>.nav-list-part>dd>a {
+    color: #6b6b6b;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.nav-list-part>.ddhot>a:after {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    top: -5px;
+    right: -25px;
+    background: url(https://www.uniqlo.cn/public/bin/images/header/hot_flg.png) no-repeat;
+    background-size: 21px 16px;
+}
+
+.nav-list-part>.ddnew>a:after {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    top: -5px;
+    right: -25px;
+    background: url(https://www.uniqlo.cn/public/bin/images/header/new_flg.png) no-repeat;
+    background-size: 21px 16px;
+}
+
+.nav-list-part>dd>a:hover {
+    text-decoration: underline;
+}
+
+header>#women>dl>.nav-list-part>dd:nth-of-type(2n) {
+    padding-left: 5px;
+    border: none;
+}
+
+header>#women>dl:nth-child(5) {
+    border-left: 1px solid #ccc;
+}
+
+#women>dl:nth-child(5)>.up-part {
+    height: 40%;
+    width: 100%;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+#women>dl:nth-child(5)>.bottom-part {
+    height: 60%;
+    width: 100%;
+    display: inline-block;
+}
+
+#women>dl:nth-child(5)>.up-part>ul {
+    width: 100%;
+    display: inline-block;
+    padding: 0 35px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#women>dl:nth-child(5)>.up-part>ul>li {
+    width: 100%;
+    text-align: left;
+    line-height: 1.8;
+    cursor: pointer;
+}
+
+#women>dl:nth-child(5)>.up-part>ul>li>a {
+    display: inline-block;
+    position: relative;
+    color: #000;
+}
+
+#women>dl:nth-child(5)>.up-part>ul>li>a.new:after {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    background: url(https://www.uniqlo.cn/public/bin/images/header/new_flg.png) no-repeat;
+    background-size: 21px 16px;
+}
+
+#women>dl:nth-child(5)>.up-part>ul>li>a.hot:after {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    background: url(https://www.uniqlo.cn/public/bin/images/header/hot_flg.png) no-repeat;
+    background-size: 21px 16px;
+}
+
+#women>dl:nth-child(5)>.up-part>ul>li:hover a {
+    text-decoration: underline;
+    color: #6b6b6b;
+}
+
+#women>dl:nth-child(5)>.bottom-part>.part-title {
+    width: 100%;
+    display: inline-block;
+    padding: 0 35px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#women>dl:nth-child(5)>.bottom-part>ul {
+    width: 100%;
+    display: inline-block;
+    padding: 0 35px;
+    font-size: 13px;
+}
+
+#women>dl:nth-child(5)>.bottom-part>ul>li {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#women>dl:nth-child(5)>.bottom-part>ul>li>a {
+    display: inline-block;
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+#women>dl:nth-child(5)>.bottom-part>ul>li>a:hover p {
+    text-decoration: underline;
+}
+
+#women>dl:nth-child(5)>.bottom-part>ul>li>a>img {
+    vertical-align: top;
+}
+
+#women>dl:nth-child(5)>.bottom-part>ul>li>a>p {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #6b6b6b;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+#women>dl:nth-child(5)>.bottom-part>.title-bottom {
+    padding: 0 35px;
+}
+
+#women>dl:nth-child(5)>.bottom-part>.title-bottom>p {
+    margin-top: -5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+#women>dl:nth-child(5)>.bottom-part>.title-bottom>p>a {
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+#women>dl:nth-child(5)>.bottom-part>.title-bottom>p>a:hover {
+    color: red;
+}
+
+header>#women>.sanjiao1 {
+    left: 100px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+header>#women>.sanjiao2 {
+    left: 200px;
+    display: none;
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+header>#women>.sanjiao3 {
+    left: 300px;
+    display: none;
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+header>#women>.sanjiao4 {
+    left: 400px;
+    display: none;
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+header>#women>.close-btn {
+    font-size: 26px;
+    color: #fe0000;
+    text-decoration: none;
+    position: absolute;
+    top: -28px;
+    right: 0;
+    cursor: pointer;
+}
+
+//右边
+header>.right-nav {
+    width: 457px;
+    height: 51px;
+    float: right;
+    background: #a1a1a1;
+}
+
+header>.right-nav>li {
+    position: relative;
+    float: left;
+    height: 51px;
+    text-align: center;
+}
+
+header>.right-nav>li>a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header>.right-nav>.aboutus {
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+header>.right-nav>li:hover {
+    color: red;
+}
+
+header>.left-nav>li>.womena:hover {
+    color: red !important;
+}
+
+.right-nav>.aboutus:hover {
+    color: red !important;
+}
+
+header>.right-nav>li>a:hover {
+    color: red;
+}
+
+header>.right-nav>li:nth-child(1) {
+    width: 129px;
+}
+
+header>.right-nav>li:nth-child(1)>a:nth-child(1) {
+    padding: 0 20px;
+    border-right: 1px #fff dotted;
+}
+
+header>.right-nav>li:nth-child(2) {
+    width: 99px;
+    background: url(../img/new.png) no-repeat 73px 8px;
+}
+
+header>.right-nav>li:nth-child(3) {
+    width: 130px;
+    background: url(../img/new.png) no-repeat 83px 8px;
+}
+
+header>.right-nav>li:nth-child(3)>a:nth-child(1) {
+    padding: 0 30px;
+    border-left: 1px #fff dotted;
+}
+
+header>.right-nav>li:nth-child(4) {
+    width: 99px;
+    background: #666666;
+}
+
+header>.header-detail {
+    display: block;
+}
+
+// 关注我们
+header>#guanzhu {
+    position: absolute;
+    top: 70px;
+    width: 1280px;
+    height: 268px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background: #fff;
+    z-index: 2000;
+    display: none;
+}
+
+header>#guanzhu>.sanjiao {
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: -1;
+    transform: rotate(45deg);
+    right: 266px;
+}
+
+header>#guanzhu>.close-btn {
+    font-size: 26px;
+    color: #fe0000;
+    text-decoration: none;
+    position: absolute;
+    top: -28px;
+    right: 0;
+    cursor: pointer;
+}
+
+header>#guanzhu>ul>.header-detail-list {
+    float: left;
+    width: 25%;
+}
+
+header>#guanzhu>ul>.header-detail-list>ul>.header-detail-title {
+    height: 38px;
+    line-height: 18px;
+    width: 315px;
+    text-align: center;
+}
+
+header>#guanzhu>ul>.header-detail-list>ul>.header-detail-title:hover {
+    background-color: #f00;
+}
+
+header>#guanzhu>ul>.header-detail-list>ul>.header-detail-title:hover a {
+    color: white;
+}
+
+header>#guanzhu>ul>.header-detail-list>ul>.header-detail-title>a {
+    text-decoration: none;
+    color: #f00;
+}
+
+header>#guanzhu>ul>.header-detail-list>ul>.header-detail-img1 {
+    width: 315px;
+    height: 190px;
+    background: url(https://www.uniqlo.cn/public/image/L1/2018/10.11/APP.jpg)no-repeat center center;
+}
+
+header>#guanzhu>ul>.header-detail-list>ul>.header-detail-img2 {
+    width: 315px;
+    height: 190px;
+    background: url(https://www.uniqlo.cn/public/image/L1/2018/10.11/wecat.jpg)no-repeat center center;
+}
+
+header>#guanzhu>ul>.header-detail-list>ul>.header-detail-img3 {
+    width: 315px;
+    height: 190px;
+    background: url(https://www.uniqlo.cn/public/Image/L1/nav/nav-Qcode/2017/06/16/QR_CHINA.jpg)no-repeat center center;
+}
+
+header>#guanzhu>ul>.header-detail-list>ul>.header-detail-img4 {
+    width: 315px;
+    height: 190px;
+    background: url(https://www.uniqlo.cn/public/Image/L1/nav/nav-Qcode/2017/06/16/QR_service.jpg)no-repeat center center;
 }

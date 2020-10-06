@@ -59,7 +59,7 @@ define([], function() {
             $(function() {
                 let $tab1 = $('.tab1 .active-sceond')
                 $.ajax({
-                        url: "http://192.168.0.15/lzy-youyiku/php/index2.php",
+                        url: "http://192.168.0.7/lzy-youyiku/php/index2.php",
                         dataType: 'json'
                     })
                     .done(function(data) {
@@ -119,7 +119,7 @@ define([], function() {
             $(function() {
                 let $tab = $('.tab1 .active-third')
                 $.ajax({
-                        url: "http://192.168.0.15/lzy-youyiku/php/index3.php",
+                        url: "http://192.168.0.7/lzy-youyiku/php/index3.php",
                         dataType: 'json'
                     })
                     .done(function(data) {
@@ -174,7 +174,7 @@ define([], function() {
             $(function() {
                 let $tab = $('.tab1 .active-fourth')
                 $.ajax({
-                        url: "http://192.168.0.15/lzy-youyiku/php/index4.php",
+                        url: "http://192.168.0.7/lzy-youyiku/php/index4.php",
                         dataType: 'json'
                     })
                     .done(function(data) {
@@ -229,7 +229,7 @@ define([], function() {
             $(function() {
                 let $tab = $('.tab1 .active-fiveth')
                 $.ajax({
-                        url: "http://192.168.0.15/lzy-youyiku/php/index5.php",
+                        url: "http://192.168.0.7/lzy-youyiku/php/index5.php",
                         dataType: 'json'
                     })
                     .done(function(data) {
@@ -281,7 +281,7 @@ define([], function() {
             //第三部分渲染穿搭推荐-合作系列-ut部分-特辑部分
             let $a1 = $('.xuanran')
             $.ajax({
-                url: "http://192.168.0.15/lzy-youyiku/php/index1.php",
+                url: "http://192.168.0.7/lzy-youyiku/php/index1.php",
                 dataType: 'json'
             }).done(function(data) {
                 let $renderdata1 = data;
@@ -504,13 +504,6 @@ define([], function() {
 
             //关注我们
             $(function() {
-                $('.aboutus').on('click', function() {
-                    $('.header-detail').css('display', 'block');
-                    $('.zhezhao').css('display', 'block');
-                    $('header').css('z-index', '2000');
-                    $('header').css('background', 'white');
-                    $(this).css('color', 'red')
-                })
                 $('.close-btn').on('click', function() {
                     $('.header-detail').css('display', 'none');
                     $('header').css('z-index', '1');
@@ -526,9 +519,82 @@ define([], function() {
                         $('.aboutus').css('color', '#fff')
                     }
                 })
+                $('.aboutus').click(function() {
+                    if ($('.header-detail').is(':hidden')) { //如果当前隐藏
+                        $('.header-detail').show(); //那么就显示div
+                        $('header').css('z-index', '2000');
+                        $('header').css('background', 'white');
+                        $('.aboutus').css('color', 'red');
+                        $('#women').css('display', 'none');
+                        $('.womena').css('color', 'black')
+                        $('.zhezhao').show();
+                    } else { //否则
+                        $('.header-detail').hide(); //就隐藏div
+                        $('header').css('z-index', '1');
+                        $('.zhezhao').css('display', 'none');
+                        $('.aboutus').css('color', '#fff');
+                        $('.zhezhao').hide();
+                    }
+                });
+
+            })
+
+            //women
+            $(function() {
+                $('#women .close-btn').on('click', function() {
+                    $('#women').css('display', 'none');
+                    $('header').css('z-index', '1');
+                    $('.zhezhao').css('display', 'none');
+                    $('#women').css('color', '#fff')
+                    $('.womena').css('color', 'black');
+                })
+                $(window).on('scroll', function() {
+                    let $topca = $(window).scrollTop();
+                    if ($topca > 0) {
+                        $('#women').css('display', 'none');
+                        $('header').css('z-index', '1');
+                        $('.zhezhao').css('display', 'none');
+                        $('#women').css('color', '#fff')
+                    }
+                })
+                $('.womena').click(function() {
+                    if ($('#women').is(':hidden')) { //如果当前隐藏
+                        $('.header-detail').css('display', 'none');
+                        $('#women').show(); //那么就显示div
+                        $('header').css('z-index', '2000');
+                        $('header').css('background', 'white');
+                        $('.womena').css('color', 'red');
+                        $('.aboutus').css('color', '#fff')
+                        $('.zhezhao').show();
+                    } else { //否则
+                        $('#women').hide(); //就隐藏div
+                        $('header').css('z-index', '1');
+                        $('.zhezhao').css('display', 'none');
+                        $('.womena').css('color', 'black');
+                        $('.zhezhao').hide();
+                    }
+                });
+
             })
 
 
+            var btnw = document.querySelector('.search');
+            var boxw = document.querySelector('.search-bottom');
+            btnw.onclick = function(ev) {
+                var ev = ev || event;
+                boxw.style.display = 'block';
+                ev.stopPropagation();
+            };
+
+            document.onclick = function() {
+                boxw.style.display = 'none';
+            };
+
+
+
+
+
         }
+
     }
 });

@@ -10,62 +10,380 @@ $m:margin;
     border: 0;
     box-sizing: border-box;
     list-style: none !important;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 body {
     font-size: 12px;
+    width: 100%;
+    height: 100%;
 }
 
-.all {
-    width: 1280px;
-    margin: 0 auto;
-    height: 1000px;
-}
-
-main {
-    width: 1280px;
-    margin: 0 auto;
+// 遮罩层
+body>.zhezhao {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1999;
 }
 
 .list {
-    width: 1160px;
+    width: 990px;
     margin: 0 auto;
     font-size: 14px;
-    height: 700px;
+    height: 1270px;
 }
 
 .list li {
-    width: 220px;
-    padding: 10px;
+    width: 225px;
     float: left;
-    margin: 0 10px 10px 0;
-    border: 1px solid #ccc;
-    height: 310px;
+    height: 400px;
     position: relative;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    margin-left: 50px;
 }
 
 .list li p {
+    margin-top: 20px;
     width: 200px;
-    height: 48px;
-    line-height: 24px;
-    overflow: hidden;
+    height: 100px;
+    line-height: 26px;
+    float: left;
+    color: black;
+    font: 12px;
 }
 
 .list li img {
-    width: 200px;
-    height: 200px;
+    margin-top: 30px;
+    width: 205px;
+    height: 205px;
     display: block;
+    float: left;
 }
 
 .list li span {
-    display: block;
+    width: 200px;
+    height: 26px;
+    float: left;
+    color: black;
+    font: 12px;
 }
 
-main>.pagelist {
+.pagelist {
+    float: right;
+    width: 990px;
+    height: 49px;
+}
+
+.m-style {
+    float: right;
+    padding: 14px 20px 15px 0;
+    width: 300px;
+    height: 49px;
+}
+
+.m-style>a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 5px;
+    height: 18px;
+    line-height: 18px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.m-style>.active {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 5px;
+    height: 18px;
+    line-height: 18px;
+    color: #fff;
+    background-color: red;
+}
+
+.jump-ipt {
+    width: 20px;
+    margin-right: 10px;
+    padding: 0 5px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #dadada;
+}
+
+.jump-btn {
+    margin-top: 5px;
+    border-color: #1b1b1b;
+    background-color: #1b1b1b;
+    color: #fff !important;
+}
+
+.main-left-header {
+    width: 270px;
+    height: 37px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.main-left-header>span {
+    margin-left: 9px;
+}
+
+.main-left-header::before {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 13px;
+    margin-left: 12px;
+    vertical-align: middle;
+    background-color: #3c3c3c;
+}
+
+.main-left-content {
+    line-height: 30px;
+    text-indent: 26px;
+    width: 270px;
+}
+
+.main-left-content>ul {
+    overflow: hidden;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.main-left-content>ul>li {
+    margin-bottom: 10px;
+}
+
+.titlek>i {
+    margin-right: 5px;
+}
+
+.titlek>i>img {
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 14px;
+    margin-left: -18px;
+    margin-right: 4px;
+    cursor: pointer;
+    transition: all .1s;
+    vertical-align: middle;
+}
+
+.titlek>span {
+    vertical-align: middle;
+}
+
+.main-left-content>ul>li>a {
+    color: black;
+}
+
+//内容
+main {
+    width: 1280px;
+    height: 2200px;
+    margin: 0 auto;
+    margin-top: 58px;
+}
+
+.main-list-title {
+    width: 1280px;
+    height: 48px;
+    position: relative;
+    line-height: 48px;
+}
+
+.title-title {
+    float: left;
+    margin-left: 5px;
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.title-title>a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.title-title>a>img {
+    width: 12px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+// 内容
+.main-content {
+    margin-bottom: 100px;
+}
+
+.main-content-title {
+    position: relative;
+    vertical-align: middle;
+    line-height: 48px;
+    border-bottom: 1px solid #d8d8d8;
+    overflow: hidden;
+}
+
+.main-content-title-content1 {
+    float: left;
+    margin-left: 5px;
+}
+
+.main-content-title-content1>span {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.main-content-title-content1>i {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+}
+
+.main-content-title-content1>i>img {
+    vertical-align: middle;
+}
+
+.main-content-title-content2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+
+//多选
+.choose-list {
+    border-bottom: 1px solid rgb(218, 218, 218);
+    position: relative;
+    overflow: hidden;
+    width: 1280px;
+    height: 37px;
+    transition: all .3s;
+}
+
+.c-second {
+    position: absolute;
+    padding-top: 6px;
+    width: 87px;
+    height: 100%;
+    transition: all .3s;
+}
+
+.item-title {
+    margin-left: 15px;
+    font-family: LTMedium;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+.choose-list>button {
+    cursor: pointer;
+    padding: 0 1px;
+    height: 22px;
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #3c3c3c;
+    background-color: #fff;
+    border: 1px solid #bababa;
+    float: right;
+    margin-top: 7px;
+    margin-right: 15px;
+    outline: none;
+}
+
+.choose-list>ul {
+    margin-left: 96px;
+    float: left;
+    width: 1000px;
+    transition: all .3s;
+    overflow: hidden;
+    height: 36px;
+}
+
+.choose-list>ul>li {
+    float: left;
+    cursor: pointer;
+    line-height: 14px;
+    margin: 10px;
+    width: 100px;
+}
+
+.choose-list>ul>li>span {
+    vertical-align: top;
+}
+
+.labela {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1;
+    display: none;
+}
+
+.labela>input {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.div_button_1 {
+    width: 1280px;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+    transition: all .3s;
+}
+
+.button-defalt {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 0 5px;
+    height: 23px;
+    margin-left: 10px;
+    color: #1b1b1b;
+    background-color: #f3f3f3;
+    border: 1px solid #bbb;
+    outline: none;
+}
+
+.button-sure {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 0 5px;
+    height: 23px;
+    margin-left: 10px;
+    color: #1b1b1b;
+    background-color: #f3f3f3;
+    border: 1px solid #bbb;
+    outline: none;
+}
+
+.main-left {
+    width: 270px;
+    float: left;
+}
+
+.main-right {
+    margin-left: 20px;
+    width: 990px;
     float: right;
 }
 
-main>.pagelist>.m-style>input {
-    border: black 1px solid;
+.main-right>button {
+    margin-left: 50px;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
 }

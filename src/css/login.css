@@ -898,358 +898,289 @@ body > .zhezhao {
   z-index: 1999;
 }
 
-.list {
-  width: 990px;
-  margin: 0 auto;
-  font-size: 14px;
-  height: 1270px;
-}
-
-.list li {
-  width: 225px;
-  float: left;
-  height: 400px;
-  position: relative;
-  margin-right: 50px;
-  margin-bottom: 25px;
-  margin-left: 50px;
-}
-
-.list li p {
-  margin-top: 20px;
-  width: 200px;
-  height: 100px;
-  line-height: 26px;
-  float: left;
-  color: black;
-  font: 12px;
-}
-
-.list li img {
-  margin-top: 30px;
-  width: 205px;
-  height: 205px;
-  display: block;
-  float: left;
-}
-
-.list li span {
-  width: 200px;
-  height: 26px;
-  float: left;
-  color: black;
-  font: 12px;
-}
-
-.pagelist {
-  float: right;
-  width: 990px;
-  height: 49px;
-}
-
-.m-style {
-  float: right;
-  padding: 14px 20px 15px 0;
-  width: 300px;
-  height: 49px;
-}
-
-.m-style > a {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 0 5px;
-  height: 18px;
-  line-height: 18px;
-  color: inherit;
-  text-decoration: none;
-}
-
-.m-style > .active {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 0 5px;
-  height: 18px;
-  line-height: 18px;
-  color: #fff;
-  background-color: red;
-}
-
-.jump-ipt {
-  width: 20px;
-  margin-right: 10px;
-  padding: 0 5px;
-  height: 18px;
-  line-height: 18px;
-  display: inline-block;
-  outline: none;
-  border: 1px solid #dadada;
-}
-
-.jump-btn {
-  margin-top: 5px;
-  border-color: #1b1b1b;
-  background-color: #1b1b1b;
-  color: #fff !important;
-}
-
-.main-left-header {
-  width: 270px;
-  height: 37px;
-  font-size: 14px;
-  overflow: hidden;
-}
-
-.main-left-header > span {
-  margin-left: 9px;
-}
-
-.main-left-header::before {
-  display: inline-block;
-  content: "";
-  width: 5px;
-  height: 13px;
-  margin-left: 12px;
-  vertical-align: middle;
-  background-color: #3c3c3c;
-}
-
-.main-left-content {
-  line-height: 30px;
-  text-indent: 26px;
-  width: 270px;
-}
-
-.main-left-content > ul {
-  overflow: hidden;
-  border-bottom: 1px solid #d9d9d9;
-}
-
-.main-left-content > ul > li {
-  margin-bottom: 10px;
-}
-
-.titlek > i {
-  margin-right: 5px;
-}
-
-.titlek > i > img {
-  display: inline-block;
-  content: "";
-  height: 20px;
-  width: 14px;
-  margin-left: -18px;
-  margin-right: 4px;
-  cursor: pointer;
-  transition: all .1s;
-  vertical-align: middle;
-}
-
-.titlek > span {
-  vertical-align: middle;
-}
-
-.main-left-content > ul > li > a {
-  color: black;
-}
-
-main {
+.login {
   width: 1280px;
-  height: 2200px;
+  height: 540px;
   margin: 0 auto;
   margin-top: 58px;
-}
-
-.main-list-title {
-  width: 1280px;
-  height: 48px;
-  position: relative;
-  line-height: 48px;
-}
-
-.title-title {
-  float: left;
-  margin-left: 5px;
-  text-decoration: underline;
-  font-weight: 900;
-  font-size: 12px;
-}
-
-.title-title > a {
-  text-decoration: none;
-  color: black;
-  margin-left: 10px;
-  font-size: 12px;
-}
-
-.title-title > a > img {
-  width: 12px;
-  vertical-align: middle;
-  margin-left: 5px;
-}
-
-.main-content {
+  background-color: #fff;
   margin-bottom: 100px;
 }
 
-.main-content-title {
-  position: relative;
-  vertical-align: middle;
-  line-height: 48px;
-  border-bottom: 1px solid #d8d8d8;
-  overflow: hidden;
-}
-
-.main-content-title-content1 {
-  float: left;
-  margin-left: 5px;
-}
-
-.main-content-title-content1 > span {
-  margin-left: 10px;
-  vertical-align: middle;
-}
-
-.main-content-title-content1 > i {
-  width: 12px;
-  height: 12px;
-  margin-left: 5px;
-}
-
-.main-content-title-content1 > i > img {
-  vertical-align: middle;
-}
-
-.main-content-title-content2 {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 21px;
-  height: 21px;
-  cursor: pointer;
-}
-
-.choose-list {
-  border-bottom: 1px solid #dadada;
-  position: relative;
-  overflow: hidden;
+.login > .login-title {
   width: 1280px;
-  height: 37px;
-  transition: all .3s;
+  height: 60px;
+  font-size: 16px;
+  text-indent: 6px;
+  background-color: #f4f4f4;
 }
 
-.c-second {
-  position: absolute;
-  padding-top: 6px;
-  width: 87px;
-  height: 100%;
-  transition: all .3s;
+.login > .login-title > h2 {
+  line-height: 60px;
 }
 
-.item-title {
-  margin-left: 15px;
-  font-family: LTMedium;
-  font-weight: bolder;
-  vertical-align: middle;
+.login > .login-content {
+  width: 640px;
+  height: 440px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 120px;
+  float: left;
 }
 
-.choose-list > button {
-  cursor: pointer;
-  padding: 0 1px;
-  height: 22px;
-  margin-left: 5px;
-  font-size: 12px;
-  line-height: 20px;
-  color: #3c3c3c;
-  background-color: #fff;
-  border: 1px solid #bababa;
-  float: right;
-  margin-top: 7px;
-  margin-right: 15px;
+.login > .login-content > .titlec {
+  width: 400px;
+  height: 40px;
+  line-height: 40px;
+  color: #7d7d7d;
+}
+
+.login > .login-content > .titlef {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 10px;
+  color: #ababab;
+  border-bottom: 4px solid #378694;
+}
+
+.login > .login-content > .titlef > h2 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.login > .login-content > form {
+  width: 400px;
+  height: 328px;
+}
+
+.login > .login-content > form > select {
+  width: 400px;
+  height: 36px;
+  border-bottom: 1px solid black;
   outline: none;
 }
 
-.choose-list > ul {
-  margin-left: 96px;
-  float: left;
-  width: 1000px;
-  transition: all .3s;
-  overflow: hidden;
-  height: 36px;
+.login > .login-content > form > .phone {
+  width: 400px;
+  height: 59px;
+  margin-top: 30px;
+  position: relative;
 }
 
-.choose-list > ul > li {
-  float: left;
-  cursor: pointer;
-  line-height: 14px;
-  margin: 10px;
-  width: 100px;
-}
-
-.choose-list > ul > li > span {
-  vertical-align: top;
-}
-
-.labela {
+.login > .login-content > form > .phone > span {
   display: inline-block;
-  cursor: pointer;
-  line-height: 1;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.login > .login-content > form > .phone > .phone-content {
+  margin-top: 5px;
+}
+
+.login > .login-content > form > .phone > .phone-content > i {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+  top: 19px;
+  bottom: 0;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/用户.png);
+}
+
+.login > .login-content > form > .phone > .phone-content > input {
+  position: absolute;
+  display: block;
+  border-style: none;
+  background-color: transparent;
+  text-indent: 6px;
+  width: 400px;
+  height: 35px;
+  outline: none;
+  padding-left: 23px;
+  text-indent: 0;
+  border-bottom: 1px solid #dadada;
+}
+
+.login > .login-content > form > .phone > .yanzheng-content {
+  margin-top: 5px;
+  width: 400px;
+  height: 35px;
+  position: relative;
+}
+
+.login > .login-content > form > .phone > .phone-content > .phone-error {
+  margin-top: 10px;
+  color: #fe0000;
+  white-space: normal;
+  position: absolute;
+  top: 55px;
   display: none;
 }
 
-.labela > input {
+.login > .login-content > form > .phone > .phone-content > .phone-error1 {
+  margin-top: 10px;
+  color: #fe0000;
+  white-space: normal;
+  position: absolute;
+  top: 55px;
+  display: none;
+}
+
+.login > .login-content > form > .phone > .phone-content > .phone-error0 {
+  margin-top: 10px;
+  color: #fe0000;
+  white-space: normal;
+  position: absolute;
+  top: 55px;
+  display: none;
+}
+
+.login > .login-content > form > .phone > .phone-content > .phone-error::before {
+  display: inline-block;
   width: 14px;
   height: 14px;
-  margin-right: 5px;
+  margin-top: -3px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url(../img/error.png);
+  content: "";
 }
 
-.div_button_1 {
-  width: 1280px;
-  height: 50px;
-  overflow: hidden;
-  text-align: center;
-  transition: all .3s;
+.login > .login-content > form > .phone > .phone-content > .phone-error1::before {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: -3px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url(../img/error.png);
+  content: "";
 }
 
-.button-defalt {
+.login > .login-content > form > .phone > .yanzheng-content > .yanzheng-error {
   margin-top: 10px;
-  cursor: pointer;
-  padding: 0 5px;
-  height: 23px;
-  margin-left: 10px;
-  color: #1b1b1b;
-  background-color: #f3f3f3;
-  border: 1px solid #bbb;
+  color: #fe0000;
+  white-space: normal;
+  position: absolute;
+  top: 35px;
+  display: none;
+}
+
+.login > .login-content > form > .phone > .yanzheng-content > .yanzheng-error0 {
+  margin-top: 10px;
+  color: #fe0000;
+  white-space: normal;
+  position: absolute;
+  top: 35px;
+  display: none;
+}
+
+.login > .login-content > form > .phone > .yanzheng-content > .yanzheng-error1 {
+  margin-top: 10px;
+  color: #fe0000;
+  white-space: normal;
+  position: absolute;
+  top: 35px;
+  display: none;
+}
+
+.login > .login-content > form > .phone > .yanzheng-content > .yanzheng-error::before {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: -3px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url(../img/error.png);
+  content: "";
+}
+
+.login > .login-content > form > .phone > .yanzheng-content > .yanzheng-error1::before {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: -3px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url(../img/error.png);
+  content: "";
+}
+
+.login > .login-content > form > .phone > .yanzheng-content > input {
+  width: 280px;
+  height: 35px;
+  position: absolute;
+  display: block;
+  border-style: none;
+  background-color: transparent;
+  text-indent: 6px;
+  border-bottom: 1px solid #dadada;
   outline: none;
 }
 
-.button-sure {
-  margin-top: 10px;
-  cursor: pointer;
-  padding: 0 5px;
-  height: 23px;
-  margin-left: 10px;
-  color: #1b1b1b;
-  background-color: #f3f3f3;
-  border: 1px solid #bbb;
-  outline: none;
-}
-
-.main-left {
-  width: 270px;
-  float: left;
-}
-
-.main-right {
-  margin-left: 20px;
-  width: 990px;
+.login > .login-content > form > .phone > .yanzheng-content > button {
+  width: 118px;
+  height: 36px;
+  font-size: 14px;
   float: right;
-}
-
-.main-right > button {
-  margin-left: 50px;
   outline: none;
-  cursor: pointer;
-  background-color: white;
+  color: white;
+  background-color: #dadada;
+  cursor: default;
 }
 
-/*# sourceMappingURL=list.css.map */
+.xieyi {
+  width: 400px;
+  height: 14px;
+  margin-top: 35px;
+}
+
+.xieyi > span {
+  vertical-align: text-top;
+  line-height: 1;
+  margin-left: 5px;
+}
+
+.xieyi > span > a {
+  color: #28788c;
+}
+
+.login-content > form > button {
+  width: 400px;
+  height: 52px;
+  margin-top: 20px;
+  background-color: #dadada;
+  color: white;
+  cursor: default;
+  outline: none;
+}
+
+.login > .login-content-right {
+  width: 640px;
+  height: 440px;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 120px;
+}
+
+.login-content-right > .right-title {
+  width: 400px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.login-content-right > a > button {
+  color: white;
+  font-size: 14px;
+  line-height: 50px;
+  width: 400px;
+  height: 50px;
+  background-color: #1b1b1b;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=login.css.map */

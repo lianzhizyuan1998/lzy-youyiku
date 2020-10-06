@@ -898,172 +898,181 @@ body > .zhezhao {
   z-index: 1999;
 }
 
-.list {
-  width: 990px;
-  margin: 0 auto;
-  font-size: 14px;
-  height: 1270px;
-}
-
-.list li {
-  width: 225px;
-  float: left;
-  height: 400px;
-  position: relative;
-  margin-right: 50px;
-  margin-bottom: 25px;
-  margin-left: 50px;
-}
-
-.list li p {
-  margin-top: 20px;
-  width: 200px;
-  height: 100px;
-  line-height: 26px;
-  float: left;
-  color: black;
-  font: 12px;
-}
-
-.list li img {
-  margin-top: 30px;
-  width: 205px;
-  height: 205px;
-  display: block;
-  float: left;
-}
-
-.list li span {
-  width: 200px;
-  height: 26px;
-  float: left;
-  color: black;
-  font: 12px;
-}
-
-.pagelist {
-  float: right;
-  width: 990px;
-  height: 49px;
-}
-
-.m-style {
-  float: right;
-  padding: 14px 20px 15px 0;
-  width: 300px;
-  height: 49px;
-}
-
-.m-style > a {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 0 5px;
-  height: 18px;
-  line-height: 18px;
-  color: inherit;
+a {
   text-decoration: none;
 }
 
-.m-style > .active {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 0 5px;
-  height: 18px;
-  line-height: 18px;
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+input {
+  border: 0;
+}
+
+.wrap {
+  float: left;
+  position: relative;
+}
+
+#spic {
+  width: 500px;
+  height: 560px;
+  float: left;
+  position: relative;
+}
+
+#spic img {
+  width: 500px;
+  height: 560px;
+}
+
+#sf {
+  width: 250px;
+  height: 280px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#bf {
+  width: 500px;
+  height: 560px;
+  overflow: hidden;
+  position: absolute;
+  left: 800px;
+  visibility: hidden;
+  z-index: 100;
+}
+
+#bf img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1000px;
+  height: 1120px;
+}
+
+.smallpic > #ulist {
+  width: 92px;
+  height: 560px;
+  overflow: hidden;
+  position: relative;
+}
+
+.smallpic > #ulist > a:nth-child(1) {
+  float: left;
+  width: 88px;
+  height: 26px;
+  text-decoration: none;
+  text-align: center;
+  background: url(../img/all-arrow.png) no-repeat center 0;
+}
+
+.smallpic > #ulist > a:nth-child(3) {
+  float: left;
+  width: 88px;
+  height: 26px;
+  text-decoration: none;
+  text-align: center;
+  background: url(../img/all-arrow.png) no-repeat center -30px;
+  z-index: 999;
+}
+
+.smallpic > #ulist > #list {
+  width: 94px;
+  position: relative;
+  height: 500px;
+  padding: 4px;
+  margin-left: -1px;
+  overflow: hidden;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.smallpic > #ulist > #list > ul {
+  list-style: none;
+  float: left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.smallpic > #ulist > #list > ul > li {
+  float: left;
+  padding: 2px 2px 2px 2px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 88px;
+  height: 88px;
+  border: 2px solid white;
+}
+
+.smallpic > #ulist > #list > ul > li:hover {
+  border: 2px solid #1b1b1b;
+}
+
+.smallpic > #ulist > #list > ul > li > img {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+}
+
+#right {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
   color: #fff;
-  background-color: red;
 }
 
-.jump-ipt {
-  width: 20px;
-  margin-right: 10px;
-  padding: 0 5px;
-  height: 18px;
-  line-height: 18px;
-  display: inline-block;
-  outline: none;
-  border: 1px solid #dadada;
+#left {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 2;
+  color: #fff;
 }
 
-.jump-btn {
-  margin-top: 5px;
-  border-color: #1b1b1b;
-  background-color: #1b1b1b;
-  color: #fff !important;
-}
-
-.main-left-header {
-  width: 270px;
-  height: 37px;
-  font-size: 14px;
-  overflow: hidden;
-}
-
-.main-left-header > span {
-  margin-left: 9px;
-}
-
-.main-left-header::before {
-  display: inline-block;
-  content: "";
-  width: 5px;
-  height: 13px;
-  margin-left: 12px;
-  vertical-align: middle;
-  background-color: #3c3c3c;
-}
-
-.main-left-content {
-  line-height: 30px;
-  text-indent: 26px;
-  width: 270px;
-}
-
-.main-left-content > ul {
-  overflow: hidden;
-  border-bottom: 1px solid #d9d9d9;
-}
-
-.main-left-content > ul > li {
-  margin-bottom: 10px;
-}
-
-.titlek > i {
-  margin-right: 5px;
-}
-
-.titlek > i > img {
-  display: inline-block;
-  content: "";
-  height: 20px;
-  width: 14px;
-  margin-left: -18px;
-  margin-right: 4px;
-  cursor: pointer;
-  transition: all .1s;
-  vertical-align: middle;
-}
-
-.titlek > span {
-  vertical-align: middle;
-}
-
-.main-left-content > ul > li > a {
-  color: black;
-}
-
-main {
+.goodsinfo {
   width: 1280px;
-  height: 2200px;
+  height: 600px;
   margin: 0 auto;
   margin-top: 58px;
+  position: relative;
 }
 
 .main-list-title {
   width: 1280px;
-  height: 48px;
+  height: 18px;
   position: relative;
-  line-height: 48px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+.smallpic {
+  width: 94px;
+  height: 560px;
+  float: left;
+}
+
+.bigpic {
+  width: 500px;
+  height: 560px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.detail-shop {
+  margin-left: 690px;
+  width: 540px;
+  height: 560px;
 }
 
 .title-title {
@@ -1087,169 +1096,162 @@ main {
   margin-left: 5px;
 }
 
-.main-content {
-  margin-bottom: 100px;
-}
-
-.main-content-title {
-  position: relative;
-  vertical-align: middle;
-  line-height: 48px;
-  border-bottom: 1px solid #d8d8d8;
-  overflow: hidden;
-}
-
-.main-content-title-content1 {
+.goodsinfo-img {
+  width: 200px;
+  height: 200px;
   float: left;
-  margin-left: 5px;
 }
 
-.main-content-title-content1 > span {
-  margin-left: 10px;
-  vertical-align: middle;
+.goodsinfo-img img {
+  width: 200px;
+  height: 200px;
 }
 
-.main-content-title-content1 > i {
-  width: 12px;
-  height: 12px;
-  margin-left: 5px;
-}
-
-.main-content-title-content1 > i > img {
-  vertical-align: middle;
-}
-
-.main-content-title-content2 {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 21px;
-  height: 21px;
-  cursor: pointer;
-}
-
-.choose-list {
-  border-bottom: 1px solid #dadada;
-  position: relative;
-  overflow: hidden;
-  width: 1280px;
-  height: 37px;
-  transition: all .3s;
-}
-
-.c-second {
-  position: absolute;
-  padding-top: 6px;
-  width: 87px;
-  height: 100%;
-  transition: all .3s;
-}
-
-.item-title {
-  margin-left: 15px;
-  font-family: LTMedium;
+.detail-shop-title {
+  width: 540px;
+  height: 19px;
+  font-size: 16px;
   font-weight: bolder;
-  vertical-align: middle;
 }
 
-.choose-list > button {
-  cursor: pointer;
-  padding: 0 1px;
-  height: 22px;
-  margin-left: 5px;
-  font-size: 12px;
-  line-height: 20px;
-  color: #3c3c3c;
-  background-color: #fff;
-  border: 1px solid #bababa;
-  float: right;
-  margin-top: 7px;
-  margin-right: 15px;
-  outline: none;
+.detail-shop-price {
+  width: 540px;
+  height: 32px;
+  margin-top: 20px;
+  font-size: 23px;
+  font-weight: bolder;
 }
 
-.choose-list > ul {
-  margin-left: 96px;
-  float: left;
-  width: 1000px;
-  transition: all .3s;
-  overflow: hidden;
-  height: 36px;
+.detail-shop-pro {
+  height: 17px;
+  margin-top: 20px;
+  width: 540px;
 }
 
-.choose-list > ul > li {
-  float: left;
-  cursor: pointer;
-  line-height: 14px;
-  margin: 10px;
-  width: 100px;
+.detail-shop-color {
+  width: 540px;
+  height: 77px;
+  margin-top: 15px;
 }
 
-.choose-list > ul > li > span {
-  vertical-align: top;
+.detail-shop-color-title {
+  margin-bottom: 10px;
+  font: size 12px;
 }
 
-.labela {
-  display: inline-block;
-  cursor: pointer;
-  line-height: 1;
-  display: none;
-}
-
-.labela > input {
-  width: 14px;
-  height: 14px;
-  margin-right: 5px;
-}
-
-.div_button_1 {
-  width: 1280px;
+.detail-shop-color-content {
   height: 50px;
-  overflow: hidden;
-  text-align: center;
-  transition: all .3s;
 }
 
-.button-defalt {
-  margin-top: 10px;
+.detail-shop-color-content > ul {
+  height: 50px;
+}
+
+.detail-shop-color-content > ul > li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 46px;
+  height: 46px;
+  float: left;
+  padding: 2px 2px 2px 2px;
+  border: 2px white solid;
+  box-sizing: border-box;
   cursor: pointer;
-  padding: 0 5px;
-  height: 23px;
-  margin-left: 10px;
-  color: #1b1b1b;
-  background-color: #f3f3f3;
-  border: 1px solid #bbb;
-  outline: none;
 }
 
-.button-sure {
-  margin-top: 10px;
-  cursor: pointer;
-  padding: 0 5px;
-  height: 23px;
-  margin-left: 10px;
-  color: #1b1b1b;
-  background-color: #f3f3f3;
-  border: 1px solid #bbb;
-  outline: none;
-}
-
-.main-left {
-  width: 270px;
+.detail-shop-color-content > ul > li > img {
+  width: 38px;
+  height: 38px;
   float: left;
 }
 
-.main-right {
-  margin-left: 20px;
-  width: 990px;
-  float: right;
+.detail-shop-size {
+  width: 540px;
+  height: 77px;
+  margin-top: 15px;
 }
 
-.main-right > button {
-  margin-left: 50px;
-  outline: none;
+.detail-shop-size-title {
+  width: 540px;
+  height: 17px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+
+.detail-shop-size-content > ul {
+  height: 90px;
+}
+
+.detail-shop-size-content > ul > li {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
+  border: 1px solid #dadada;
+  font-family: LTMedium;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  font-weight: bolder;
+}
+
+.detail-shop-counter {
+  width: 540px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 50px;
+}
+
+.detail-shop-counter > button > img {
+  width: 20px;
+  height: 20px;
   background-color: white;
 }
 
-/*# sourceMappingURL=list.css.map */
+.detail-shop-counter > button:nth-child(1) {
+  width: 20px;
+  height: 20px;
+  border: none;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 50px;
+  outline: none;
+}
+
+.detail-shop-counter > button:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  border: none;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  margin-right: 50px;
+}
+
+#count {
+  width: 75px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #ababab;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.p-btn {
+  margin-top: 50px;
+  width: 540px;
+  height: 52px;
+}
+
+.p-btn > button {
+  width: 99%;
+  height: 100%;
+  background-color: red;
+  color: white;
+  outline: none;
+}
+
+/*# sourceMappingURL=detail.css.map */

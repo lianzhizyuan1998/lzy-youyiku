@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import "header";
+@import "footer";
+$w:width;
+$h:height;
+$m:margin;
+* {
+    padding: 0;
+    #{$m}: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    text-decoration: none;
+}
+
+body {
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+body>.zhezhao {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1999;
+}
+
+// 注册内容
+.login {
+    width: 1280px;
+    height: 440px;
+    margin: 0 auto;
+    margin-top: 58px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.login>.login-title {
+    width: 1280px;
+    height: 60px;
+    font-size: 16px;
+    text-indent: 6px;
+    background-color: #f4f4f4;
+}
+
+.login>.login-title>h2 {
+    line-height: 60px;
+}
+
+.login>.login-content {
+    width: 1280px;
+    height: 440px;
+    padding: 20px 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login>.login-content>form {
+    width: 480px;
+    height: 328px;
+}
+
+.login>.login-content>form>select {
+    width: 480px;
+    height: 36px;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.login>.login-content>form>.phone {
+    width: 480px;
+    height: 59px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.login>.login-content>form>.phone>span {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.login>.login-content>form>.phone>.phone-content {
+    margin-top: 5px;
+}
+
+.login>.login-content>form>.phone>.phone-content>i {
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    top: 19px;
+    bottom: 0;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/用户.png);
+}
+
+.login>.login-content>form>.phone>.phone-content>input {
+    position: absolute;
+    display: block;
+    border-style: none;
+    background-color: transparent;
+    text-indent: 6px;
+    width: 480px;
+    height: 35px;
+    outline: none;
+    padding-left: 23px;
+    text-indent: 0;
+    border-bottom: 1px solid #dadada;
+}
+
+.login>.login-content>form>.phone>.yanzheng-content {
+    margin-top: 5px;
+    width: 480px;
+    height: 35px;
+    position: relative;
+}
+
+.login>.login-content>form>.phone>.phone-content>.phone-error {
+    margin-top: 10px;
+    color: #fe0000;
+    white-space: normal;
+    position: absolute;
+    top: 55px;
+    display: none;
+}
+
+.login>.login-content>form>.phone>.phone-content>.phone-error1 {
+    margin-top: 10px;
+    color: #fe0000;
+    white-space: normal;
+    position: absolute;
+    top: 55px;
+    display: none;
+}
+
+.login>.login-content>form>.phone>.phone-content>.phone-error0 {
+    margin-top: 10px;
+    color: #fe0000;
+    white-space: normal;
+    position: absolute;
+    top: 55px;
+    display: none;
+}
+
+.login>.login-content>form>.phone>.phone-content>.phone-error::before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: -3px;
+    margin-right: 6px;
+    vertical-align: middle;
+    background-image: url(../img/error.png);
+    content: "";
+}
+
+.login>.login-content>form>.phone>.phone-content>.phone-error1::before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: -3px;
+    margin-right: 6px;
+    vertical-align: middle;
+    background-image: url(../img/error.png);
+    content: "";
+}
+
+.login>.login-content>form>.phone>.yanzheng-content>.yanzheng-error {
+    margin-top: 10px;
+    color: #fe0000;
+    white-space: normal;
+    position: absolute;
+    top: 35px;
+    display: none;
+}
+
+.login>.login-content>form>.phone>.yanzheng-content>.yanzheng-error0 {
+    margin-top: 10px;
+    color: #fe0000;
+    white-space: normal;
+    position: absolute;
+    top: 35px;
+    display: none;
+}
+
+.login>.login-content>form>.phone>.yanzheng-content>.yanzheng-error1 {
+    margin-top: 10px;
+    color: #fe0000;
+    white-space: normal;
+    position: absolute;
+    top: 35px;
+    display: none;
+}
+
+.login>.login-content>form>.phone>.yanzheng-content>.yanzheng-error::before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: -3px;
+    margin-right: 6px;
+    vertical-align: middle;
+    background-image: url(../img/error.png);
+    content: "";
+}
+
+.login>.login-content>form>.phone>.yanzheng-content>.yanzheng-error1::before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: -3px;
+    margin-right: 6px;
+    vertical-align: middle;
+    background-image: url(../img/error.png);
+    content: "";
+}
+
+.login>.login-content>form>.phone>.yanzheng-content>input {
+    width: 350px;
+    height: 35px;
+    position: absolute;
+    display: block;
+    border-style: none;
+    background-color: transparent;
+    text-indent: 6px;
+    border-bottom: 1px solid #dadada;
+    outline: none;
+}
+
+.login>.login-content>form>.phone>.yanzheng-content>button {
+    width: 118px;
+    height: 36px;
+    font-size: 14px;
+    float: right;
+    outline: none;
+    color: white;
+    background-color: #dadada;
+    cursor: default;
+}
+
+.xieyi {
+    width: 480px;
+    height: 14px;
+    margin-top: 35px;
+}
+
+.xieyi>span {
+    vertical-align: text-top;
+    line-height: 1;
+    margin-left: 5px;
+}
+
+.xieyi>span>a {
+    color: #28788c;
+}
+
+.login-content>form>button {
+    width: 480px;
+    height: 52px;
+    margin-top: 20px;
+    background-color: #dadada;
+    color: white;
+    cursor: default;
+    outline: none;
+}
