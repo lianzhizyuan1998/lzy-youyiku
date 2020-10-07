@@ -5,11 +5,409 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script/require.js" data-main="script/main.js" defer async="true" id="currentpage" data-page="cart_module"></script>
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="./script/require.js" data-main="./script/main.js" defer async="true" id="currentpage" data-page="cart_module"></script>
 </head>
 
 <body>
+    <!-- 遮罩层 -->
+    <div class="zhezhao"></div>
+    <!-- 头部 -->
+    <div class="header">
+        <ul>
+            <!-- 头部logo 隐藏 下滑会悬浮顶部显示 -->
+            <div class="logof">
+                <a href="./blank-jump-page.html" target="_blank"><img src="./img/logo1.png"></a>
+            </div>
+            <li><a href="./registry.html" target="_blank">注册</a></li>
+            <li class="dotted"></li>
+            <li><a href="./login.html" target="_blank">登录</a></li>
+            <li class="dotted"></li>
+            <li><a href="./blank-jump-page.html" target="_blank"><i></i><span>账户</span></a></li>
+            <li class="dotted"></li>
+            <li><a href="./blank-jump-page.html" target="_blank"><i></i><span>收藏夹</span></a></li>
+            <li class="dotted"></li>
+            <li><a href="./cart.html" target="_blank"><i></i><span>购物车</span><i></i></a></li>
+            <li class="dotted"></li>
+            <li><a href="./blank-jump-page.html" target="_blank"><i></i><span>站内信</span></a></li>
+            <li class="dotted"></li>
+            <li><a href="./blank-jump-page.html" target="_blank"><i></i><span>联系客服</span></a></li>
+            <li class="dotted"></li>
 
+            <!-- 移入显示二维码  -->
+            <li class="share-all"><i></i><span>门店购买</span>
+                <div class="share-overly">
+                    <span>门店急送等服务仅支持手机端购买，欢迎扫码体验！</span>
+                    <!-- 左边APP二维码 -->
+                    <div class="share-overly-left">
+                        <img src="./img/app-download.png">
+                        <span>优衣库APP下载</span>
+                    </div>
+                    <!-- 右边小程序二维码 -->
+                    <div class="share-overly-right">
+                        <img src="./img/wx-download.png">
+                        <span>优衣库小程序登录</span>
+                    </div>
+                </div>
+            </li>
+            <li class="dotted"></li>
+
+            <!-- 搜索框 -->
+            <li>
+                <div class="search"><input type="text" placeholder="站内搜索" value autocomplete="off"><i></i></div>
+                <div class="search-bottom">
+                    <div class="search-bottom1">
+                        <div class="search-bottom-title">热门搜索</div>
+                        <ul>
+                            <li><a href="./blank-jump-page.html" target="_blank">卫衣</a></li>
+                            <li><a href="./blank-jump-page.html" target="_blank">衬衫</a></li>
+                            <li><a href="./blank-jump-page.html" target="_blank">牛仔裤</a></li>
+                            <li><a href="./blank-jump-page.html" target="_blank">JWA设计师系列</a></li>
+                            <li>
+                                <a href="./blank-jump-page.html" target="_blank">长袖T恤</a>
+                            </li>
+                            <li><a href="./blank-jump-page.html" target="_blank">高级轻型羽绒服</a></li>
+                            <li><a href="./blank-jump-page.html" target="_blank">床上用品</a></li>
+                            <li><a href="./blank-jump-page.html" target="_blank">定制款衬衫</a></li>
+                            <li><a href="./blank-jump-page.html" target="_blank">修改裤长</a></li>
+                            <li><a href="./blank-jump-page.html" target="_blank">企业团购</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 二级菜单 -->
+    <header>
+        <!-- 二级菜单左边 -->
+        <ul class="left-nav">
+            <li>
+                <img src="./img/LOGO.png">
+            </li>
+            <li><span class="womena">女 装 WOMEN</span></li>
+            <li><span class="mena">男 装 MEN</span></li>
+            <li><span class="kidsa">童 装 KIDS</span></li>
+            <li><span class="babya">婴 幼 儿 装 BABY</span></li>
+        </ul>
+        <!-- 二级菜单右边 -->
+        <ul class="right-nav">
+            <li>
+                <a href="./blank-jump-page.html" target="_blank">网上购买指南</a>
+            </li>
+            <li class="aboutus">关注我们</li>
+            <li><a href="./blank-jump-page.html" target="_blank">公告区</a></li>
+            <li><a href="./blank-jump-page.html" target="_blank">店铺资料</a></li>
+        </ul>
+        <div id="women">
+            <div class="sanjiao1"></div>
+            <dl>
+                <div class="nav-list-part">
+                    <dt>	外套&针织衫</dt>
+                    <dd class="ddhot"> <a href="./list.html" target="_blank">外套</a></dd>
+                    <dd><a href="./list.html" target="_blank">针织衫</a></dd>
+                    <dd><a href="./list.html" target="_blank">防晒系列</a></dd>
+                    <dd class="ddhot"><a href="./list.html" target="_blank">高级轻型羽绒服</a></dd>
+                    <dd><a href="./list.html" target="_blank">摇粒绒系列</a></dd>
+                </div>
+                <div class="nav-list-part"><dt>裤装</dt>
+                    <dd class="ddhot"> <a href="./list.html" target="_blank">牛仔裤</a></dd>
+                    <dd class="ddhot"><a href="./list.html" target="_blank">长裤</a></dd>
+                    <dd class="ddhot"><a href="./list.html" target="_blank">九分裤·七分裤</a></dd>
+                    <dd><a href="./list.html" target="_blank">紧身裤</a></dd>
+                    <dd><a href="./list.html" target="_blank">短裤</a></dd>
+                </div>
+                <div class="nav-list-part"><dt>裙装</dt>
+                    <dd class="ddhot"> <a href="./list.html" target="_blank">连衣裙·连体装</a></dd>
+                    <dd><a href="./list.html" target="_blank">半身裙</a></dd>
+                    <dd><a href="./list.html" target="_blank">裙裤</a></dd>
+
+                </div>
+            </dl>
+            <dl>
+                <div class="nav-list-part"><dt>	衬衫&T恤</dt>
+                    <dd class="ddnew"> <a href="./list.html" target="_blank">UT系列</a></dd>
+                    <dd class="ddhot"><a href="./list.html" target="_blank">衬衫</a></dd>
+                    <dd><a href="./list.html" target="_blank">T恤</a></dd>
+                    <dd><a href="./list.html" target="_blank">法兰绒系列</a></dd>
+                </div>
+                <div class="nav-list-part"><dt>	运动衫&运动裤</dt>
+                    <dd class="ddhot"> <a href="./list.html" target="_blank">运动衫</a></dd>
+                    <dd class="ddhot"><a href="./list.html" target="_blank">运动裤</a></dd>
+                    <dd class="ddhot"><a href="./list.html" target="_blank">生活运动系列</a></dd>
+                </div>
+                <div class="nav-list-part"><dt>	孕妇装&亲子装</dt>
+                    <dd> <a href="./list.html" target="_blank">孕妇</a></dd>
+                    <dd><a href="./list.html" target="_blank">亲子装</a></dd>
+                </div>
+            </dl>
+            <dl>
+                <div class="nav-list-part"><dt>	内衣&内裤&袜子</dt>
+                    <dd class="ddnew"> <a href="./list.html" target="_blank">无钢圈文胸</a></dd>
+                    <dd><a href="./list.html" target="_blank">内裤</a></dd>
+                    <dd class='ddhot'><a href="./list.html" target="_blank">内衣</a></dd>
+                    <dd><a href="./list.html" target="_blank">舒美衣BRA IN ONE</a></dd>
+                    <dd class='ddhot'><a href="./list.html" target="_blank">紧身裤·袜子</a></dd>
+                    <dd><a href="./list.html" target="_blank">AIRism系列</a></dd>
+                    <dd class='ddhot'><a href="./list.html" target="_blank">HEATTECH系列</a></dd>
+                    <dd><a href="./list.html" target="_blank">塑身系列</a></dd>
+                </div>
+                <div class="nav-list-part"><dt>	家居系列&配件</dt>
+                    <dd class="ddnew"> <a href="./list.html" target="_blank">起居系列</a></dd>
+                    <dd class="ddnew"><a href="./list.html" target="_blank">配件</a></dd>
+                    <dd><a href="./list.html" target="_blank">泳装</a></dd>
+                    <dd class="ddnew"><a href="./list.html" target="_blank">床上用品</a></dd>
+                </div>
+            </dl>
+            <dl>
+                <div class="up-part">
+                    <ul>
+                        <li><a class='new' href="./list.html" target="_blank">新作商品</a></li>
+                        <li><a class='hot' href="./list.html" target="_blank">限时特优</a></li>
+                        <li><a class='hot' href="./list.html" target="_blank">特大/特小尺码妇</a></li>
+                        <li><a href="./list.html" target="_blank">超U惠专区</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./list.html" target="_blank">UT特辑</a></li>
+                        <li><a href="./list.html" target="_blank">合作系列</a></li>
+                        <li><a href="./list.html" target="_blank">便利购物服务</a></li>
+                        <li><a href="./list.html" target="_blank">Today's Pick Up</a></li>
+                    </ul>
+                </div>
+                <div class="bottom-part">
+                    <div class="part-title">特辑推荐</div>
+                    <ul>
+                        <li>
+                            <a href="./list.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-1.jpg">
+                                <p>法兰绒特辑</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-2.jpg">
+                                <p>无钢圈文胸特辑</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-3.jpg">
+                                <p>休闲服特辑</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-4.jpg">
+                                <p>衬衫</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="title-bottom">
+                        <p><a href="./list.html" target="_blank">点击查看更多特辑</a></p>
+                    </div>
+                </div>
+            </dl>
+            <div class="sanjiao2"></div>
+            <div class="sanjiao3"></div>
+            <div class="sanjiao4"></div>
+            <div class="close-btn">X</div>
+        </div>
+        <div id="men"></div>
+        <div id="kids"></div>
+        <div id="baby"></div>
+        <div id="guanzhu" class="header-detail">
+            <div class="sanjiao"></div>
+            <ul>
+                <li class='header-detail-list'>
+                    <ul>
+                        <li class="header-detail-title"><a href="./blank-jump-page.html" target="_blank">优衣库掌上旗舰店<br>UNIQLO APP</a></li>
+                        <li class='header-detail-img1'></li>
+                    </ul>
+                </li>
+                <li class='header-detail-list'>
+                    <ul>
+                        <li class="header-detail-title"><a href="./blank-jump-page.html" target="_blank">优衣库掌上旗舰店<br>
+                                    微信小程序</a></li>
+                        <li class='header-detail-img2'></li>
+                    </ul>
+                </li>
+                <li class='header-detail-list'>
+                    <ul>
+                        <li class="header-detail-title"><a href="./blank-jump-page.html" target="_blank">优衣库官方微信<br>
+                                    ( UNIQLO_CHINA )</a></li>
+                        <li class='header-detail-img3'></li>
+                    </ul>
+                </li>
+                <li class='header-detail-list'>
+                    <ul>
+                        <li class="header-detail-title"><a href="./blank-jump-page.html" target="_blank"> 优衣库网络旗舰店微信<br>
+                                    ( UNIQLO_SERVICE )</a></li>
+                        <li class='header-detail-img4'></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="close-btn">X</div>
+        </div>
+    </header>
+
+    <ul class="cart-flow">
+
+        <li class="active">
+            <div>1</div><span>查看购物车</span></li>
+        <li class="false">
+            <div>2</div><span>订单确认</span></li>
+        <li class="false">
+            <div>3</div><span>订单支付</span></li>
+
+    </ul>
+    <!--main-->
+    <div id="container" class="cart">
+        <div class="w">
+            <!--全部商品哪一行-->
+            <div class="cart-top" style="display: block;">
+                <ul>
+                    <li width="40px"></li>
+                    <li width="120px">配送方式</li>
+                    <li width="370px">商品信息</li>
+                    <li width="270px"></li>
+                    <li width="120px">价格</li>
+                    <li width="120px">数量</li>
+                    <li width="120px">小计</li>
+                    <li width="120px">操作</li>
+                </ul>
+            </div>
+            <!--包裹购物车-->
+            <div class="cart-wrap" style="display: block;">
+                <div class="w">
+                    <div id="jd-cart">
+                        <div class="cartmain">
+                            <!-- 快速配送 -->
+                            <div class="cart-thead">
+                                <div class="cart-col t-checkbox">
+                                    <div class="cart-checkbox">
+                                        <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 快速配送
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="cart-list">
+                                <div class="cart-item-list">
+                                    <div class="cart-tbody">
+                                        <!-- 显示购物车列表 -->
+                                        <div class="item-list">
+                                            <div class="goods-item goods-item-sele" style="display: none;">
+                                                <div class="goods-info">
+                                                    <div class="cell b-checkbox">
+                                                        <div class="cart-checkbox">
+                                                            <input type="checkbox" checked="" name="" id="" value="" />
+                                                            <span class="line-circle">修改配送方式</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-goods">
+                                                        <div class="goods-name">
+                                                            <div class="goods-pic">
+                                                                <a href=""><img src="" alt="" /></a>
+                                                            </div>
+                                                            <div class="goods-msg">
+                                                                <div class="goods-d-info">
+                                                                    <a href="">Apple iMac 27英寸一体机（Core i5
+                                                                        处理器/8GB内存/1TB存储/2GB独显/Retina 5K屏 MK462CH/A）</a>
+                                                                </div>
+                                                                <div class="goods-ex">
+                                                                    <span class="promise"></span>
+                                                                    <span class="promise">
+                                                                        <a href="">支持30天无理由退换货</a>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-props">
+                                                        <div class="prop-text"></div>
+                                                    </div>
+                                                    <div class="cell b-price">
+                                                        ¥<strong>13488.00</strong>
+                                                        <div class="sales-promotion-dropdown">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-quantity">
+                                                        <div class="quantity-form">
+                                                            <a class="quantity-down" href="javascript:void(0)"><img src="./img/---.png"></a>
+                                                            <input type="text" value="1" />
+                                                            <a class="quantity-add" href="javascript:void(0)"><img src="./img/+++.png"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-sum">
+                                                        ¥<strong>13488.00</strong>
+                                                    </div>
+                                                    <div class="cell b-action">
+                                                        <a href="javascript:void(0)">删除</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cart-floatbar">
+                        <div class="select-all">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                            </div>
+                        </div>
+                        <div class="operation">
+                            <a href="javascript:void(0)">删除</a>
+                        </div>
+                        <div class="toolbar-right">
+                            <div class="btn-area">
+                                <a href="">立即结算</a>
+                            </div>
+                            <div class="price-sum">
+                                <span class="txt">总价（不含运费）：</span>
+                                <span class="totalprice">￥0.00</span>
+                            </div>
+                            <div class="amount-sum">
+                                已选择
+                                <em>0</em> 件商品
+                                <b></b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-header"><span>店铺推荐</span></div>
+    <div class="tab1">
+        <ul class="active-sceond"></ul>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <!-- 底部导航 -->
+        <div class="footer-nav">
+            <!-- 左边的Logo -->
+            <div class="footer-logo">
+                <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/Image/L1/footer/footer_logo.gif"></a>
+            </div>
+            <!-- 右边的列表 -->
+            <ul>
+                <li><a href="./blank-jump-page.html" target="_blank">店铺资料</a></li>
+                <li><a href="./blank-jump-page.html" target="_blank">招聘信息</a></li>
+                <li><a href="./blank-jump-page.html " target="_blank">访问权限</a>
+                </li>
+                <li> <a href="./blank-jump-page.html" target="_blank">隐私权保护</a></li>
+            </ul>
+        </div>
+        <!-- 下面的工商图标 -->
+        <div class="footer-content">
+            <!-- 左边的防伪字 -->
+            <div class="anti-fake">
+                <a href="./blank-jump-page.html" target="_blank">迅销（中国）商贸有限公司 沪ICP备09003223号</a>
+                <a href="./blank-jump-page.html"><img src="./img/national.png">沪公网安备 31010402000957号</a>
+            </div>
+            <!-- 右边的防伪图片 -->
+            <div class="anti-fake2">
+                <a href="./blank-jump-page.html" target="_blank"><img src="https://www.uniqlo.cn/public/image/L1/2020/special/lz2.jpg"></a>
+                <img src="./img/订购.png">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

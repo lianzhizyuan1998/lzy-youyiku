@@ -31,6 +31,47 @@ body>.zhezhao {
     z-index: 1999;
 }
 
+.zhezhao2 {
+    left: calc(50% - 300px);
+    top: calc(40% - 110px);
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 2000;
+    height: 221px;
+    position: fixed;
+    display: none;
+}
+
+.zhezhao2-title {
+    padding: 20px 20px 0 30px;
+    font-size: 24px;
+}
+
+.zhezhao2-title>i {
+    cursor: pointer;
+    float: right;
+}
+
+.zhezhao2-content {
+    padding: 30px;
+    font-size: 14px;
+}
+
+.zhezhao2>button {
+    text-align: center;
+    padding-bottom: 30px;
+    width: 200px;
+    height: 52px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 52px;
+    color: white;
+    background-color: #1b1b1b;
+    outline: none;
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
 }
@@ -385,4 +426,5 @@ input {
     background-color: red;
     color: white;
     outline: none;
+    cursor: pointer;
 }

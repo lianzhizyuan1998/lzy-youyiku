@@ -290,7 +290,7 @@ define(['jcookie'], function() {
 
 
 
-            $('.p-btn a').on('click', function() {
+            $('.p-btn button').on('click', function() {
                 //获取当前商品对应的sid
                 let $sid = $(this).parents('.goodsinfo').find('#smallpic').attr('sid');
                 //判断是第一次点击还是多次点击
@@ -310,9 +310,17 @@ define(['jcookie'], function() {
                     arrnum.push($('#count').val()); //将数量push到arrnum数组中
                     $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
                 }
-                alert('按钮触发了');
+                $('.zhezhao').css('display', 'block')
+                $('.zhezhao2').css('display', 'block')
             });
-
+            $('.zhezhao2-title i').on('click', function() {
+                $('.zhezhao').css('display', 'none')
+                $('.zhezhao2').css('display', 'none')
+            });
+            $('.zhezhao2 button').on('click', function() {
+                $('.zhezhao').css('display', 'none')
+                $('.zhezhao2').css('display', 'none')
+            })
         }
     }
 });
